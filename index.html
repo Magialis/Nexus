@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aboreto&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Uncial+Antiqua&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/thin/style.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="icon" href="./assets/images/favicon.png" type="image/png">
+    <title>Nexus | Portal Oficial</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <a href="index.html">
+                <img class="logo" src="./assets/images/logo.png" alt="Nexus - Portal Oficial de Atlantida">
+            </a>
+            <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+                <span class="nav-toggle__bar"></span>
+                <span class="nav-toggle__bar"></span>
+                <span class="nav-toggle__bar"></span>
+            </button>
+
+            <nav class="nav" id="menu" aria-label="Navegação principal">
+                <a href="#inicio" class="nav__link nav__link--active" aria-current="page">Início</a>
+                <a href="#mundo" class="nav__link">O Mundo</a>
+                <a href="#habitantes" class="nav__link">Habitantes</a>
+                <a href="#mural" class="nav__link">Mural</a>
+                <a href="#fale" class="nav__link">Fale com o Portal</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <section id="inicio" class="page active">
+            <h1>Início</h1>
+        </section>
+
+        <section id="mundo" class="page">
+            <h1>O Mundo</h1>
+        </section>
+
+        <section id="habitantes" class="page">
+            <h1>Habitantes</h1>
+        </section>
+
+        <section id="mural" class="page">
+            <h1>Mural</h1>
+        </section>
+
+        <section id="fale" class="page">
+            <h1>Fale com o Portal</h1>
+        </section>
+    </main>
+
+    <script src="assets/scripts/main.js" defer></script>
+
+</body>
+
+</html>

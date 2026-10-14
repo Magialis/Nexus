@@ -1,0 +1,274 @@
+/* =========================================
+   VARIÁVEIS
+========================================= */
+
+:root {
+    --color-ocean-dark: #011723;
+    --color-ocean: #082B3A;
+    --color-cyan: #19B8C5;
+    --color-lilac: #7678FF;
+    --color-sand-dark: #9D8662;
+    --color-sand: #C8B58A;
+    --color-off-white: #F8F7F6;
+
+    --fs-display: 64px;
+    --fs-heading: 48px;
+    --fs-subheading: 36px;
+    --fs-title: 24px;
+    --fs-subtitle: 20px;
+    --fs-text: 16px;
+    --fs-label: 14px;
+    --fs-caption: 12px;
+
+    --ff-display: 'Uncial Antiqua', system-ui;
+    --ff-title: 'Aboreto', system-ui;
+    --ff-text: 'Montserrat', sans-serif;
+
+    --container-width: 1440px;
+}
+
+@media (max-width: 768px) {
+    :root {
+        --fs-display: 36px;
+        --fs-heading: 32px;
+        --fs-subheading: 26px;
+        --fs-title: 20px;
+        --fs-subtitle: 18px;
+    }
+}
+
+
+/* =========================================
+    RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--ff-text);
+    background-color: var(--color-ocean-dark);
+    color: var(--color-off-white);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--color-cyan);
+    outline-offset: 4px;
+}
+
+
+/* =========================================
+    CONTAINER
+========================================= */
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin-inline: auto;
+}
+
+
+/* =========================================
+    HEADER
+========================================= */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    padding: 18px 40px;
+    background-color: var(--color-ocean-dark);
+}
+
+.header__container {
+    width: 100%;
+    max-width: 1440px;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: block;
+    width: 100%;
+    max-width: 358px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav__link {
+    position: relative;
+    color: var(--color-off-white);
+    font-size: var(--fs-subtitle);
+    transition: color 0.3s ease;
+}
+
+.nav__link:hover,
+.nav__link--active {
+    color: var(--color-cyan);
+}
+
+.nav__link--active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    height: 2px;
+    background-color: var(--color-cyan);
+}
+
+
+/* Botão do menu (escondido no desktop) */
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+
+    border: 1px solid rgba(232, 226, 211, 0.3);
+    border-radius: 8px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.nav-toggle__bar {
+    display: block;
+    height: 2px;
+    background-color: var(--color-off-white);
+}
+
+/* =========================================
+    PÁGINAS
+========================================= */
+
+main {
+    padding-top: var(--header-height, 120px);
+}
+
+.page {
+    display: none;
+    width: 100%;
+    max-width: var(--container-width);
+    margin-inline: auto;
+    padding: 40px;
+}
+
+.page.active {
+    display: block;
+    animation: page-in 0.4s ease;
+}
+
+@keyframes page-in {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .page.active {
+        animation: none;
+    }
+}
+
+
+/* =========================================
+    TABLET
+========================================= */
+
+@media (max-width: 1024px) {
+
+    .header {
+        padding: 20px 30px;
+    }
+
+    .nav {
+        gap: 18px;
+    }
+}
+
+
+/* =========================================
+    MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .header {
+        padding: 18px 20px;
+    }
+
+    .logo {
+        max-width: 300px;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav {
+        display: none;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+
+        padding: 16px 20px 24px;
+        border-bottom: 1px solid rgba(232, 226, 211, 0.15);
+        background: rgba(8, 43, 58, 0.97);
+    }
+
+    .nav--open {
+        display: flex;
+    }
+
+    .nav__link {
+        width: 100%;
+        padding: 12px 0;
+        font-size: 15px;
+    }
+
+    .nav__link--active::after {
+        display: none;
+    }
+
+    .page {
+        padding: 24px 20px;
+    }
+}
