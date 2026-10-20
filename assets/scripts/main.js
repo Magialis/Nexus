@@ -66,3 +66,28 @@ function atualizarAlturaHeader() {
 atualizarAlturaHeader();
 window.addEventListener("resize", atualizarAlturaHeader);
 window.addEventListener("load", atualizarAlturaHeader);
+
+/* ---------- Filtros do Mural ---------- */
+const filterButtons = document.querySelectorAll('.filter-btn');
+const postCards = document.querySelectorAll('.post-card');
+
+filterButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+        // Remove a classe active de todos os botões e aplica no selecionado
+        filterButtons.forEach((btn) => btn.classList.remove('active'));
+        button.classList.add('active');
+
+        const filterValue = button.getAttribute('data-filter');
+
+        // Mostra ou oculta os posts correspondentes à categoria
+        postCards.forEach((card) => {
+            const cardCategory = card.getAttribute('data-category');
+
+            if (filterValue === 'all' || cardCategory === filterValue) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    });
+});

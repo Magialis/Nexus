@@ -1,5 +1,5 @@
 /* =========================================
-   VARIÁVEIS
+VARIÁVEIS
 ========================================= */
 
 :root {
@@ -270,5 +270,222 @@ main {
 
     .page {
         padding: 24px 20px;
+    }
+}
+
+/* =========================================
+MURAL (Estilos Específicos)
+========================================= */
+
+.mural__header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.mural__subtitle {
+    font-size: var(--fs-subtitle);
+    color: var(--color-lilac);
+    font-family: var(--ff-text);
+    display: block;
+    margin-bottom: 4px;
+}
+
+.mural__title {
+    font-size: var(--fs-heading);
+    font-family: var(--ff-title);
+    color: var(--color-off-white);
+    letter-spacing: 2px;
+}
+
+.btn-nova-publicacao {
+    display: block;
+    margin-left: auto; /* Empurra o botão totalmente para o lado direito */
+    margin-top: 20px;  /* Espaçamento entre os filtros de cima e o botão */
+    
+    padding: 12px 24px;
+    background: transparent;
+    border: 1px solid var(--color-lilac);
+    border-radius: 8px;
+    color: var(--color-lilac);
+    font-family: var(--ff-text);
+    font-size: var(--fs-text);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-nova-publicacao:hover {
+    background: var(--color-lilac);
+    color: var(--color-ocean-dark);
+}
+
+/* Filtros */
+.mural-filters {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 16px;
+    background: var(--color-ocean-dark);
+    border: 1px solid var(--color-off-white);
+    border-radius: 8px;
+    color: var(--color-off-white);
+    font-family: var(--ff-display);
+    font-size: var(--fs-text);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn i {
+    font-size: 22px;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    border-color: var(--color-lilac);
+    color: var(--color-lilac);
+}
+
+/* Posts / Cards */
+.mural-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.post-card {
+    background-color: rgba(9, 25, 35, 1);
+    border: 1px solid var(--color-ocean);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.post-card:hover {
+    border-color: rgba(25, 184, 197, 0.4);
+}
+
+.post__image-container {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+}
+
+.post__image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.post__content {
+    padding: 32px;
+}
+
+.post__meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.badge {
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: var(--fs-caption);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.badge--aviso {
+    background-color: rgba(217, 83, 79, 0.2);
+    color: #f29c9a;
+}
+
+.badge--pedido {
+    background-color: rgba(240, 173, 78, 0.2);
+    color: #f5d179;
+}
+
+.badge--informacao {
+    background-color: rgba(91, 192, 222, 0.2);
+    color: var(--color-cyan);
+}
+
+.post__time {
+    font-size: var(--fs-caption);
+    color: rgba(248, 247, 246, 0.6);
+}
+
+.post__author {
+    font-family: var(--ff-display);
+    font-size: var(--fs-subtitle);
+    color: var(--color-off-white);
+    margin-bottom: 8px;
+}
+
+.post__post-title {
+    font-family: var(--ff-text);
+    font-size: var(--fs-title);
+    font-weight: 600;
+    color: var(--color-off-white);
+    margin-bottom: 16px;
+}
+
+.post__text {
+    font-size: var(--fs-text);
+    color: rgba(248, 247, 246, 0.8);
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.post__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(232, 226, 211, 0.1);
+    padding-top: 20px;
+}
+
+.post__stats {
+    display: flex;
+    gap: 20px;
+    color: rgba(248, 247, 246, 0.7);
+    font-size: var(--fs-label);
+}
+
+.post__stats span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.post__comments-link {
+    font-size: var(--fs-label);
+    color: var(--color-cyan);
+    transition: opacity 0.2s;
+}
+
+.post__comments-link:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .mural__header-top {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .post__content {
+        padding: 20px;
+    }
+    .post__image-container {
+        height: 180px;
     }
 }
