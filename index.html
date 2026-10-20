@@ -48,7 +48,67 @@
         </section>
 
         <section id="habitantes" class="page">
-            <h1>Habitantes</h1>
+            <p class="page__inhabitants__subtitle">Nossa gente</p>
+            <h1 class="page__inhabitants__title">HABITANTES</h1>
+
+            <div class="page__inhabitants__profile">
+                    <article class="profile">
+                        <img class="profile__image" src="./assets/images/Lira.png" alt="Lira Vellen, bióloga marinha">
+                        <h3 class="profile__name">Lira Vellen</h3>
+                        <p class="profile__role">Bióloga marinha</p>
+                        <p class="profile__description">Estuda a vida marinha e ajuda a preservar o equilíbrio do ecossistema de Atlântida.</p>
+                        <p class="profile__tags">PESQUISA | NATUREZA | CIÊNCIA</p>
+                    </article>
+
+                    <article class="profile">
+                        <img class="profile__image" src="./assets/images/Darius.png" alt="Darius Kell, engenheiro">
+                        <h3 class="profile__name">Darius Kell</h3>
+                        <p class="profile__role">Engenheiro</p>
+                        <p class="profile__description">Mantém as estruturas da cidade funcionando e garante que a tecnologia nunca pare.</p>
+                        <p class="profile__tags">TECNOLOGIA | MANUTENÇÃO | SOLUÇÕES</p>
+                    </article>
+
+                    <article class="profile">
+                        <img class="profile__image" src="./assets/images/Sora.png" alt="Sora Tanaka, arquivista">
+                        <h3 class="profile__name">Sora Tanaka</h3>
+                        <p class="profile__role">Arquivista</p>
+                        <p class="profile__description">Guarda a memória de Atlântida e organiza o conhecimento da comunidade.</p>
+                        <p class="profile__tags">HISTÓRIA | CULTURA | APRENDIZADO</p>
+                    </article>
+
+                    <article class="profile">
+                        <img class="profile__image" src="./assets/images/Bruno.png" alt="Bruno Santos, professor">
+                        <h3 class="profile__name">Bruno Santos</h3>
+                        <p class="profile__role">Professor</p>
+                        <p class="profile__description">Transmite o conhecimento e a história de Atlântida, preparando as futuras gerações para os desafios do oceano.</p>
+                        <p class="profile__tags">EDUCAÇÃO | ENSINO | CONHECIMENTO</p>
+                    </article>
+
+                    <article class="profile">
+                        <img class="profile__image" src="./assets/images/Juno.png" alt="Juno Reyes, técnica de comunicação">
+                        <h3 class="profile__name">Juno Reyes</h3>
+                        <p class="profile__role">Técnica de comunicação</p>
+                        <p class="profile__description">Mantém os canais de comunicação ativos e conecta pessoas dentro e fora da cidade.</p>
+                        <p class="profile__tags">COMUNICAÇÃO | REDES | CRIATIVIDADE</p>
+                    </article>
+
+                    <article class="profile">
+                        <img class="profile__image" src="./assets/images/Kael.png" alt="Kael, médico">
+                        <h3 class="profile__name">Kael</h3>
+                        <p class="profile__role">Médico</p>
+                        <p class="profile__description">Cuida da saúde da comunidade e ajuda a todos a viverem melhor em Atlântida.</p>
+                        <p class="profile__tags">SAÚDE | CUIDADO | BEM-ESTAR</p>
+                    </article>
+            </div>
+
+            <div class="page__inhabitants__end">
+                <h2 class="page__inhabitants__end_title">CADA HABITANTE FAZ</h2>
+                <h2 class="page__inhabitants__end_title">ATLANTIDA ACONTECER</h2>
+                <p class="page__inhabitants__end_text">E você também faz parte desta história</p>
+                <p class="page__inhabitants__end_text">Explore, conheça, interaja como cada pessoa</p>
+                <p class="page__inhabitants__end_text">torna esta cidade possível.</p>
+                <img class="page__inhabitants__end_image" src="./assets/images/img_end.png" alt="Imagem ilustrativa de habitantes de Atlântida">
+            </div>
         </section>
 
         <section id="mural" class="page">
@@ -56,7 +116,61 @@
         </section>
 
         <section id="fale" class="page">
-            <h1>Fale com o Portal</h1>
+            <p class="page__portal__subtitle">Sua mensagem chega mais longe</p>
+            <h1 class="page__portal__title">Fale com o Portal</h1>
+            <div class="page__portal_texts">
+                <p>Suporte, denúncias e cadastro de novos habitantes.</p>
+                <p>Resposta em até 2 ciclos.</p>
+                <p class="p_sand"><span>Denúncias de vazamento têm prioridade.</span></p>
+            </div>
+            <div class="page__portal__form">
+                <img class="page__portal__form_bg" src="./assets/images/bckg-forum.png" alt="Imagem ilustrativa do portal de mensagens">
+                <div class="page__portal__form__container">
+                    <h3 class="page__portal__form-title">Envie sua mensagem</h3>
+
+                    <div class="form_first_row">
+                        <div class="form_name">
+                            <label for="name" class="form_name_label">Nome</label>
+                            <input type="text" id="name" class="form_name_input" name="name" placeholder="Nome">
+                        </div>
+                        <div class="form_dome">
+                            <label for="dome" class="form_dome_label">Cúpula de Origem</label>
+                            <input type="text" id="dome" name="dome" class="form_dome_input" placeholder="Selecione a opção abaixo">
+                        </div>
+                    </div>
+
+                    <div class="form_btn">
+                        <label class="form_btn_title">Tipo de Solicitação</label>
+                        <div class="form_btn_inputs">
+                            <input type="radio" name="tipo" id="ajuda" checked>
+                            <label for="ajuda">Ajuda</label>
+
+                            <input type="radio" name="tipo" id="denuncia">
+                            <label for="denuncia">Denúncia de Vazamento</label>
+
+                            <input type="radio" name="tipo" id="cadastro">
+                            <label for="cadastro">Cadastro</label>
+                        </div>
+                    </div>
+                    <div class="form_subject">
+                        <label class="form_subject_label" for="subject">Assunto</label>
+                        <input class="form_subject_input" type="text" id="subject" name="subject" placeholder="Assunto da mensagem">
+                    </div>
+                    <div class="form_message">
+                        <label class="form_message_label" for="message">Mensagem</label>
+                        <textarea class="form_message_input" id="message" name="message" placeholder="Escreva sua mensagem"></textarea>
+                    </div>
+                    <div class="form_submit">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page__portal__end">
+                <h1 class="page__portal__end_title">CADA VOZ IMPORTA</h1>
+                <p class="page__portal__end_text">O Portal é mais do que uma plataforma.</p>
+                <p class="page__portal__end_text">É o ela que nos mantém unidos!.</p>
+            </div>
         </section>
     </main>
 
