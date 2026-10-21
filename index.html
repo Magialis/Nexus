@@ -16,6 +16,28 @@
 </head>
 
 <body>
+
+    <div class="water-effects" aria-hidden="true">
+        <span class="bubble bubble--1"></span>
+        <span class="bubble bubble--2"></span>
+        <span class="bubble bubble--3"></span>
+        <span class="bubble bubble--4"></span>
+        <span class="bubble bubble--5"></span>
+        <span class="bubble bubble--6"></span>
+        <span class="bubble bubble--7"></span>
+        <span class="bubble bubble--8"></span>
+
+        <div class="water-light water-light--1"></div>
+        <div class="water-light water-light--2"></div>
+        <div class="water-light water-light--3"></div>
+
+        <span class="water-particle particle--1"></span>
+        <span class="water-particle particle--2"></span>
+        <span class="water-particle particle--3"></span>
+        <span class="water-particle particle--4"></span>
+        <span class="water-particle particle--5"></span>
+    </div>
+
     <header class="header">
         <div class="header__container">
             <a href="index.html">
@@ -40,11 +62,268 @@
 
     <main>
         <section id="inicio" class="page active">
-            <h1>Início</h1>
+            <section class="hero">
+
+        <img class="hero__image" src="./assets/images/heroimagem.png" alt="Vista da cidade subaquática de Atlântida">
+
+        <div class="hero__content">
+            <span class="hero__eyebrow">BEM-VINDO A</span>
+
+            <h1 class="hero__title">ATLÂNTIDA</h1>
+
+            <h2 class="hero__subtitle">
+                ONDE TECNOLOGIA,<br>
+                NATUREZA E GENTE SE<br>
+                CONECTAM
+            </h2>
+
+            <p class="hero__description">
+                O portal dos moradores de Atlântida.
+                Aqui você conhece seus vizinhos, conversa com
+                outras cúpulas, pede ou oferece ajuda e acompanha
+                os avisos da cidade, para que ninguém fique
+                isolado no fundo do oceano.
+            </p>
+        </div>
+    </section>
+
+    <!-- CIVILIZAÇÃO -->
+    <section class="civilization">
+
+        <div class="civilization__heading">
+            <span class="civilization__eyebrow">EXPLORE</span>
+            <h2 class="civilization__title">A Civilização</h2>
+        </div>
+
+        <div class="civilization__grid">
+            <div class="civilization__card">
+                <i class="ph-thin ph-globe civilization__icon"></i>
+                <h3>O MUNDO</h3>
+                <p>
+                    Como a cidade nasceu e como
+                    se vive no fundo do mar
+                </p>
+            </div>
+            
+            <div class="civilization__card">
+                <i class="ph-thin ph-identification-badge civilization__icon"></i>
+                <h3>HABITANTES</h3>
+                <p>
+                    Conheça as pessoas que vivem
+                    em Atlântida
+                </p>
+            </div>
+
+            <div class="civilization__card">
+                <i class="ph-thin ph-push-pin civilization__icon"></i>
+                <h3>MURAL</h3>
+                <p>
+                    Avisos, pedidos e ofertas de
+                    ajuda da comunidade
+                </p>
+            </div>
+            
+            <div class="civilization__card">
+                <i class="ph-thin ph-envelope-simple-open civilization__icon"></i>
+                <h3>FALE COM O<br>PORTAL</h3>
+                <p>
+                    Peça ajuda, cadastre-se ou fale
+                    com a administração
+                </p>
+            </div>
+        </div>
+
+    </section>
         </section>
 
         <section id="mundo" class="page">
-            <h1>O Mundo</h1>
+            <div class="mundo">
+
+    <header class="mundo__noticias-header mundo__noticias-header--mobile">
+        <div>
+            <span class="mundo__eyebrow">
+                <p>Atlântida · Presente e Memória</p>
+            </span>
+            <h1 class="mundo__titulo">O MUNDO</h1>
+        </div>
+    </header>
+
+    <header class="mundo__noticias-header mundo__noticias-header--tablet">
+        <div>
+            <span class="mundo__eyebrow">
+                <p>Atlântida · Presente e Memória</p>
+            </span>
+            <h1 class="mundo__titulo">O MUNDO</h1>
+        </div>
+    </header>
+
+    <!-- MAPA -->
+    <section class="mundo__mapa">
+
+        <div class="mundo__mapa-visual">
+            <img class="mundo__mapa-imagem" src="./assets/images/mapa.png" alt="Vista completa da cidade subaquática de Atlântida">
+
+    <div class="mundo__marcadores">
+
+        <span id="marcador-saude" class="mundo__marcador mundo__marcador--1">
+            <span class="mundo__marcador-numero">1</span>
+            <span class="mundo__marcador-texto">Saúde</span>
+        </span>
+
+        <span id="marcador-educacao" class="mundo__marcador mundo__marcador--2">
+            <span class="mundo__marcador-numero">2</span>
+            <span class="mundo__marcador-texto">Educação</span>
+        </span>
+
+        <span id="marcador-logistica" class="mundo__marcador mundo__marcador--3">
+            <span class="mundo__marcador-numero">3</span>
+            <span class="mundo__marcador-texto">Logística</span>
+        </span>
+
+        <span id="marcador-pesquisa" class="mundo__marcador mundo__marcador--4">
+            <span class="mundo__marcador-numero">4</span>
+            <span class="mundo__marcador-texto">Pesquisa</span>
+        </span>
+
+        <span id="marcador-navegacao" class="mundo__marcador mundo__marcador--5">
+            <span class="mundo__marcador-numero">5</span>
+            <span class="mundo__marcador-texto">Navegação</span>
+        </span>
+    </div>
+        </div>
+
+        <div class="mundo__instituicoes">
+            <h2 class="mundo__instituicoes-titulo">
+                Instituições da Sociedade
+            </h2>
+
+    <div id="saude" class="mundo__instituicao">
+        <span class="mundo__instituicao-numero">1</span>
+        <i class="ph-thin ph-heartbeat"></i>
+        <span>Centro de Saúde Abissal</span>
+        <p>Saúde</p>
+    </div>
+
+    <div id="educacao" class="mundo__instituicao">
+        <span class="mundo__instituicao-numero">2</span>
+        <i class="ph-thin ph-graduation-cap"></i>
+        <span>Academia Submersa</span>
+        <p>Educação</p>
+    </div>
+
+    <div id="logistica" class="mundo__instituicao">
+        <span class="mundo__instituicao-numero">3</span>
+        <i class="ph-thin ph-package"></i>
+        <span>Central de Distribuição</span>
+        <p>Logística</p>
+    </div>
+
+    <div id="pesquisa" class="mundo__instituicao">
+        <span class="mundo__instituicao-numero">4</span>
+        <i class="ph-thin ph-flask"></i>
+        <span>Centro de Pesquisa</span>
+        <p>Pesquisa</p>
+    </div>
+
+    <div id="navegacao" class="mundo__instituicao">
+        <span class="mundo__instituicao-numero">5</span>
+        <i class="ph-thin ph-navigation-arrow"></i>
+        <span>Artesanato, Mapas e Tráfego</span>
+        <p>Navegação</p>
+    </div>
+
+    <div id="saude" class="mundo__instituicao">
+        <span class="mundo__instituicao-numero">6</span>
+        <i class="ph-thin ph-bank"></i>
+        <span>Ouvidoria & Conselho</span>
+        <p>Conselho</p>
+    </div>
+        </div>
+
+    </section>
+            <!-- NOTICIAS -->
+            <section class="mundo__noticias">
+                <header class="mundo__noticias-header">
+                    <div>
+                        <span class="mundo__eyebrow">
+                            <p>Atlântida · Presente e Memória</p>
+                        </span>
+                        <h1 class="mundo__titulo">O MUNDO</h1>
+                    </div>
+            
+                </header>
+                <div class="mundo__categorias">
+                <button class="mundo__categoria mundo__categoria--ativa" type="button" data-categoria="arquivo">
+                    <i class="ph-thin ph-archive mundo__icone-circular"></i>
+                    <p>Arquivo Histórico</p>
+                </button>
+                <button class="mundo__categoria" type="button" data-categoria="fauna">
+                    <i class="ph-thin ph-fish mundo__icone-circular"></i>
+                    <p>Fauna</p>
+                </button>
+            </div>
+
+                <!-- CARTAZES-->
+                <div id="conteudo-arquivo" class="mundo__conteudo">
+            <div class="mundo__cartazes">
+                <img src="./assets/images/cartaz.png" alt="Cinco jornais históricos de Atlântida sobre o clima, as marés, a ciência os sobreviventes e o Novo Horizonte">
+            </div>
+        </div>
+
+    <!-- FAUNA -->
+    <div id="conteudo-fauna" class="mundo__conteudo" hidden>
+        <div class="mundo__fauna">
+            <article class="mundo__criatura">
+                <img src="./assets/images/Espectro Abissal.png" alt="Espectro Abissal">
+                <h3>Espectro Abissal</h3>
+                <p>
+                    Uma criatura de corpo alongado, protegido por placas resistentes e adornado com longos tentáculos bioluminescentes. Alimenta-se de organismos microscópicos presentes na água, filtrando grandes quantidades para sobreviver. Apesar de sua dieta, é extremamente territorial e reage agressivamente à aproximação de outras criaturas. Seus pontos luminosos funcionam como sensores, permitindo detectar movimentos mesmo na escuridão absoluta das fossas oceânicas.
+                </p>
+            </article>
+
+            <article class="mundo__criatura">
+                <img src="./assets/images/Baleia Andromeda.png" alt="Baleia Andromeda">
+                <h3>Baleia Andromeda</h3>
+                <p>
+                    Uma gigantesca criatura marinha de corpo robusto, pele escura e padrões bioluminescentes que lembram um céu estrelado. Alimenta-se principalmente de plâncton e outros organismos microscópicos, filtrando a água durante seus deslocamentos. Suas vocalizações de baixa frequência podem percorrer grandes distâncias, permitindo a comunicação entre indivíduos separados por quilômetros. Apesar de seu tamanho impressionante, apresenta comportamento geralmente pacífico.
+                </p>
+            </article>
+
+            <article class="mundo__criatura">
+                <img src="./assets/images/Carangueijo Rei.png" alt="Caranguejo Rei">
+                <h3>Caranguejo Rei</h3>
+                <p>
+                    Um crustáceo de médio a grande porte, com carapaça espessa, múltiplos olhos e pinças extremamente poderosas. Suas estruturas rígidas protegem o corpo contra predadores, enquanto suas patas articuladas permitem atravessar terrenos rochosos com facilidade. É uma criatura territorial que utiliza sua força para defender seu habitat e capturar presas, sendo um dos principais predadores do fundo oceânico.
+                </p>
+            </article>
+
+            <article class="mundo__criatura">
+                <img src="./assets/images/Tartaruga Bolha.png" alt="Tartaruga Bolha">
+                <h3>Tartaruga Bolha</h3>
+                <p>
+                    Uma espécie de tartaruga marinha de grande porte, reconhecida por seu casco formado por placas arredondadas semelhantes a bolhas. Essas estruturas apresentam padrões luminosos azulados que ajudam na orientação em águas profundas. Seu corpo resistente oferece proteção contra predadores, enquanto suas nadadeiras largas permitem deslocamentos lentos e eficientes. Alimenta-se de algas e pequenos organismos encontrados em recifes e formações rochosas submarinas.
+                </p>
+            </article>
+
+            <article class="mundo__criatura">
+                <img src="./assets/images/Lagarto do Artico Profundo.png" alt="Lagarto do Ártico Profundo">
+                <h3>Lagarto do Ártico Profundo</h3>
+                <p>
+                    Um predador adaptado às águas extremamente frias, com o corpo revestido por estruturas cristalinas semelhantes ao gelo e mandíbulas repletas de dentes afiados. Habita cavernas glaciais e regiões remotas do oceano, onde se camufla entre formações congeladas para surpreender suas presas. É uma espécie extremamente rara e muito difícil de localizar, com pouquíssimos avistamentos registrados. Sua aparência misteriosa e a dificuldade de encontrá-lo fizeram com que se tornasse quase uma lenda dos oceanos, cuja existência ainda é questionada por muitos exploradores.
+                </p>
+            </article>
+
+            <article class="mundo__criatura">
+                <img src="./assets/images/Anciao do Pantano.png" alt="Ancião do Pântano">
+                <h3>Ancião do Pântano</h3>
+                <p>
+                    Uma criatura misteriosa de corpo alongado e aparência semelhante à de um antigo organismo marinho coberto por algas e vegetação. Pouco se sabe sobre sua biologia, seus hábitos alimentares ou sua distribuição, pois existem pouquíssimos registros de sua presença. Os raros relatos descrevem uma silhueta gigantesca movendo-se lentamente por águas escuras e pantanosas. Sua origem e comportamento permanecem desconhecidos, tornando-o um completo mistério para os pesquisadores.
+                </p>
+            </article>
+        </div>
+    </div>
+            </section>
+        </div>
         </section>
 
         <section id="habitantes" class="page">
