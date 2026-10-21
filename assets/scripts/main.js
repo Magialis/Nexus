@@ -91,3 +91,111 @@ filterButtons.forEach((button) => {
         });
     });
 });
+// MARCADORES
+
+(function () {
+    const marcadores = document.querySelectorAll(".mundo__marcador");
+    const instituicoes = document.querySelectorAll(".mundo__instituicao");
+    const titulo = document.querySelector(".mundo__instituicoes-titulo");
+
+    if (!marcadores.length || !instituicoes.length) return;
+
+    const telaEmpilhada = window.matchMedia("(max-width: 1024px)");
+
+    let marcadorAtual = null;
+
+    function mostrarTodas() {
+        marcadorAtual = null;
+        instituicoes.forEach(function (instituicao) {
+            instituicao.style.display = "";
+        });
+    }
+
+    function mostrarSomente(instituicaoSelecionada) {
+        instituicoes.forEach(function (instituicao) {
+            instituicao.style.display =
+                instituicao === instituicaoSelecionada ? "" : "none";
+        });
+
+        if (telaEmpilhada.matches) {
+            instituicaoSelecionada.scrollIntoView({
+                behavior: "smooth",
+                block: "center"
+            });
+        }
+    }
+
+    function aoSelecionar(marcador) {
+        const idInstituicao = marcador.id.replace("marcador-", "");
+        const instituicao = document.getElementById(idInstituicao);
+
+        if (!instituicao) return;
+
+        if (marcadorAtual === marcador) {
+            mostrarTodas();
+            return;
+        }
+
+        marcadorAtual = marcador;
+        mostrarSomente(instituicao);
+    }
+
+    marcadores.forEach(function (marcador) {
+        marcador.setAttribute("tabindex", "0");
+        marcador.setAttribute("role", "button");
+
+        marcador.addEventListener("click", function () {
+            aoSelecionar(marcador);
+        });
+
+        marcador.addEventListener("keydown", function (evento) {
+            if (evento.key === "Enter" || evento.key === " ") {
+                evento.preventDefault();
+                aoSelecionar(marcador);
+            }
+        });
+    });
+
+    if (titulo) {
+        titulo.style.cursor = "pointer";
+        titulo.addEventListener("click", mostrarTodas);
+    }
+
+    document.addEventListener("keydown", function (evento) {
+        if (evento.key === "Escape") mostrarTodas();
+    });
+})();
+
+/* ARQUIVO E FAUNA */
+
+const botoesCategoria = document.querySelectorAll("[data-categoria]");
+
+const conteudoArquivo = document.getElementById("conteudo-arquivo");
+const conteudoFauna = document.getElementById("conteudo-fauna");
+
+function trocarCategoria(categoriaSelecionada) {
+    if (!conteudoArquivo || !conteudoFauna) return;
+
+    conteudoArquivo.hidden = categoriaSelecionada !== "arquivo";
+    conteudoFauna.hidden = categoriaSelecionada !== "fauna";
+
+    botoesCategoria.forEach((botao) => {
+        const selecionado =
+            botao.dataset.categoria === categoriaSelecionada;
+
+        botao.classList.toggle(
+            "mundo__categoria--ativa",
+            selecionado
+        );
+
+        botao.setAttribute("aria-pressed", String(selecionado));
+    });
+}
+
+botoesCategoria.forEach((botao) => {
+    botao.addEventListener("click", () => {
+        trocarCategoria(botao.dataset.categoria);
+    });
+});
+
+trocarCategoria("arquivo");
