@@ -10,7 +10,7 @@
         href="https://fonts.googleapis.com/css2?family=Aboreto&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Uncial+Antiqua&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/thin/style.css">
-    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
     <link rel="icon" href="./assets/images/favicon.png" type="image/png">
     <title>Nexus | Portal Oficial</title>
 </head>
@@ -390,9 +390,237 @@
             </div>
         </section>
 
-        <section id="mural" class="page">
-            <h1>Mural</h1>
-        </section>
+<section id="mural" class="page">
+    <div class="mural__header-top">
+        <div>
+            <span class="mural__subtitle">Conexões e suporte</span>
+            <h2 class="mural__title">MURAL</h2>
+        </div>
+    </div>
+
+    <!-- Filtros -->
+    <div class="mural-filters">
+        <button class="filter-btn active" data-filter="all" type="button">
+            <i class="ph-thin ph-squares-four"></i> Todos
+        </button>
+        <button class="filter-btn" data-filter="aviso" type="button">
+            <i class="ph-thin ph-megaphone"></i> Avisos
+        </button>
+        <button class="filter-btn" data-filter="pedido" type="button">
+            <i class="ph-thin ph-hand-heart"></i> Pedidos
+        </button>
+        <button class="filter-btn" data-filter="informacao" type="button">
+            <i class="ph-thin ph-info"></i> Informações
+        </button>
+        <button class="btn-nova-publicacao" type="button">+ Nova publicação</button>
+    </div>
+
+    <!-- Lista de Publicações -->
+    <div class="mural-posts">
+        <!-- Post 1: Aviso -->
+        <article class="post-card" data-category="aviso">
+            <!-- <div class="post__image-container">
+                <img src="./assets/images/mural-3.png" alt="Ajuste de pressão nas eclusas do Túnel de Conexão Leste">
+            </div> -->
+            <div class="post__content">
+                <div class="post__meta">
+                    <span class="badge badge--aviso">AVISO</span>
+                    <span class="post__time">Há 1 hora</span>
+                </div>
+                <h3 class="post__author">Kaelen Vance</h3>
+                <h4 class="post__post-title">Ajuste de pressão nas eclusas do Túnel de Conexão Leste</h4>
+                <p class="post__text">Informamos a todos os moradores da Cúpula 3 que realizaremos um ajuste técnico de pressão nas eclusas de transição hoje, às 20h. O tráfego de submersíveis de pequeno porte ficará suspenso durante os 40 minutos de procedimento.</p>
+                <div class="post__footer">
+                    <div class="post__stats">
+                        <span><i class="ph-thin ph-heart"></i> 38</span>
+                        <span><i class="ph-thin ph-chat-text"></i> 5</span>
+                    </div>
+                    <a href="#" class="post__comments-link">Ver comentários &gt;</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Post 2: Aviso -->
+        <article class="post-card" data-category="aviso">
+            <!-- <div class="post__image-container">
+                <img src="./assets/images/mural-1.png" alt="Teste preventivo no sistema de filtragem de oxigênio">
+            </div> -->
+            <div class="post__content">
+                <div class="post__meta">
+                    <span class="badge badge--aviso">AVISO</span>
+                    <span class="post__time">Há 2 horas</span>
+                </div>
+                <h3 class="post__author">Darius Kell</h3>
+                <h4 class="post__post-title">Teste preventivo no sistema de filtragem de oxigênio</h4>
+                <p class="post__text">Informamos a todos os residentes que realizaremos uma manutenção preventiva nas bombas de oxigênio do Setor Leste hoje, às 18h. O procedimento durará cerca de 30 minutos e não afetará a pressão das instalações. Permanecem válidos os protocolos de rotina.</p>
+                <div class="post__footer">
+                    <div class="post__stats">
+                        <span><i class="ph-thin ph-heart"></i> 42</span>
+                        <span><i class="ph-thin ph-chat-text"></i> 8</span>
+                    </div>
+                    <a href="#" class="post__comments-link">Ver comentários &gt;</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Post 3: Pedido -->
+        <article class="post-card" data-category="pedido">
+            <!-- <div class="post__image-container">
+                <img src="./assets/images/mural-3.png" alt="Troca comunitária de nutrientes e cultivo de bio-oxigênio">
+            </div> -->
+            <div class="post__content">
+                <div class="post__meta">
+                    <span class="badge badge--pedido">PEDIDO</span>
+                    <span class="post__time">Há 3 horas</span>
+                </div>
+                <h3 class="post__author">Lyra Thalassa</h3>
+                <h4 class="post__post-title">Troca comunitária de nutrientes e cultivo de bio-oxigênio</h4>
+                <p class="post__text">Colhi uma nova safra de Spirulina concentrada na Estufa Agrícola do Setor Sul. Preciso de duas válvulas de vedação para tubulação de 50mm. Quem tiver interesse na troca de mantimentos por peças de reposição, entre em contato!</p>
+                <div class="post__footer">
+                    <div class="post__stats">
+                        <span><i class="ph-thin ph-heart"></i> 24</span>
+                        <span><i class="ph-thin ph-chat-text"></i> 9</span>
+                    </div>
+                    <a href="#" class="post__comments-link">Ver comentários &gt;</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Post 4: Pedido -->
+        <article class="post-card" data-category="pedido">
+            <div class="post__image-container">
+                <img src="./assets/images/Solicitação de voluntários para expedição na Barreira de Corais.png" alt="Solicitação de voluntários para expedição na Barreira de Corais">
+            </div>
+            <div class="post__content">
+                <div class="post__meta">
+                    <span class="badge badge--pedido">PEDIDO</span>
+                    <span class="post__time">Há 4 horas</span>
+                </div>
+                <h3 class="post__author">Lira Vellen</h3>
+                <h4 class="post__post-title">Solicitação de voluntários para expedição na Barreira de Corais</h4>
+                <p class="post__text">Estamos organizando uma coleta de amostras biológicas na borda externa da barreira de corais neste fim de semana. Precisamos de 3 voluntários com certificação de mergulho profundo para auxiliar no transporte dos equipamentos de medição. Quem tiver interesse, entre em contato!</p>
+                <div class="post__footer">
+                    <div class="post__stats">
+                        <span><i class="ph-thin ph-heart"></i> 19</span>
+                        <span><i class="ph-thin ph-chat-text"></i> 12</span>
+                    </div>
+                    <a href="#" class="post__comments-link">Ver comentários &gt;</a>
+                </div>
+            </div>
+        </article>
+
+
+        <!-- Post 5: Informação -->
+        <article class="post-card" data-category="informacao">
+            <!-- <div class="post__image-container">
+                <img src="./assets/images/mural-3.png" alt="Horários das rotas de transporte para a Cúpula Central">
+            </div> -->
+            <div class="post__content">
+                <div class="post__meta">
+                    <span class="badge badge--informacao">INFORMAÇÃO</span>
+                    <span class="post__time">Há 5 horas</span>
+                </div>
+                <h3 class="post__author">Nerin Solis</h3>
+                <h4 class="post__post-title">Horários das rotas de transporte para a Cúpula Central</h4>
+                <p class="post__text">O cronograma de saídas das cápsulas de transporte interdistrital foi atualizado no portal. A partir de amanhã, teremos viagens extras a cada 30 minutos no horário de pico para facilitar o deslocamento dos estudantes da Academia.</p>
+                <div class="post__footer">
+                    <div class="post__stats">
+                        <span><i class="ph-thin ph-heart"></i> 61</span>
+                        <span><i class="ph-thin ph-chat-text"></i> 14</span>
+                    </div>
+                    <a href="#" class="post__comments-link">Ver comentários &gt;</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Post 6: Aviso -->
+        <article class="post-card" data-category="aviso">
+            <div class="post__content">
+                <div class="post__meta">
+                    <span class="badge badge--aviso">AVISO</span>
+                    <span class="post__time">Há 8 horas</span>
+                </div>
+                <h3 class="post__author">Orion Vane</h3>
+                <h4 class="post__post-title">Estabilização dos níveis de oxigênio na Cúpula 2</h4>
+                <p class="post__text">A manutenção corretiva nos filtros de microalgas foi concluída com sucesso. Os indicadores de qualidade do ar retornaram aos 100% de eficiência. Agradecemos à comunidade pela colaboração durante o período de racionamento preventivo.</p>
+                <div class="post__footer">
+                    <div class="post__stats">
+                        <span><i class="ph-thin ph-heart"></i> 52</span>
+                        <span><i class="ph-thin ph-chat-text"></i> 8</span>
+                    </div>
+                    <a href="#" class="post__comments-link">Ver comentários &gt;</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Post 7: Pedido -->
+        <article class="post-card" data-category="pedido">
+            <div class="post__image-container">
+                <img src="./assets/images/oficina biolumi.png" alt="Inscrições abertas para a oficina de manutenção de redes bioluminescentes">
+            </div>
+            <div class="post__content">
+                <div class="post__meta">
+                    <span class="badge badge--pedido">PEDIDO</span>
+                    <span class="post__time">Há 12 horas</span>
+                </div>
+                <h3 class="post__author">Talia Korin</h3>
+                <h4 class="post__post-title">Inscrições abertas para a oficina de manutenção de redes bioluminescentes</h4>
+                <p class="post__text">Estamos buscando 4 voluntários interessados em aprender técnicas de reparo nos cabos de fibra óptica e feixes bioluminescentes que conectam os bairros. Não é necessária experiência prévia, apenas cadastro regular no portal.</p>
+                <div class="post__footer">
+                    <div class="post__stats">
+                        <span><i class="ph-thin ph-heart"></i> 31</span>
+                        <span><i class="ph-thin ph-chat-text"></i> 11</span>
+                    </div>
+                    <a href="#" class="post__comments-link">Ver comentários &gt;</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Post 8: Informação -->
+        <article class="post-card" data-category="informacao">
+            <div class="post__content">
+                <div class="post__meta">
+                    <span class="badge badge--informacao">INFORMAÇÃO</span>
+                    <span class="post__time">Há 1 dia</span>
+                </div>
+                <h3 class="post__author">Maya Zephyr</h3>
+                <h4 class="post__post-title">Convocação para a Assembleia Geral do Conselho de Atlântida</h4>
+                <p class="post__text">Convidamos todos os moradores para a sessão comunitária que ocorrerá no Átrio Central neste sábado. Pauta principal: expansão das estufas agrícolas e planejamento de entregas da Central de Logística para o próximo mês.</p>
+                <div class="post__footer">
+                    <div class="post__stats">
+                        <span><i class="ph-thin ph-heart"></i> 74</span>
+                        <span><i class="ph-thin ph-chat-text"></i> 22</span>
+                    </div>
+                    <a href="#" class="post__comments-link">Ver comentários &gt;</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Post 9: Informação -->
+        <article class="post-card" data-category="informacao">
+            <div class="post__image-container">
+                <img src="./assets/images/Abertura do novo acervo digital na Grande Biblioteca.png" alt="Abertura do novo acervo digital na Grande Biblioteca">
+            </div>
+            <div class="post__content">
+                <div class="post__meta">
+                    <span class="badge badge--informacao">INFORMAÇÃO</span>
+                    <span class="post__time">Há 1 dia</span>
+                </div>
+                <h3 class="post__author">Sora Tanaka</h3>
+                <h4 class="post__post-title">Abertura do novo acervo digital na Grande Biblioteca</h4>
+                <p class="post__text">É com grande alegria que anunciamos a digitalização de mais de 500 documentos históricos sobre os primeiros anos da fundação de Atlântida. O acervo já está acessível a todos os moradores nos terminais de consulta da biblioteca central e no portal.</p>
+                <div class="post__footer">
+                    <div class="post__stats">
+                        <span><i class="ph-thin ph-heart"></i> 56</span>
+                        <span><i class="ph-thin ph-chat-text"></i> 15</span>
+                    </div>
+                    <a href="#" class="post__comments-link">Ver comentários &gt;</a>
+                </div>
+            </div>
+        </article>
+
+    </div>
+</section>
 
         <section id="fale" class="page">
             <p class="page__portal__subtitle">Sua mensagem chega mais longe</p>
