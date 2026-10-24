@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nexus, o portal oficial dos moradores de Atläntida: conheça o mundo, os habitantes, o mural da comunidade e fale com a administração.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -40,8 +41,8 @@
 
     <header class="header">
         <div class="header__container">
-            <a href="index.html">
-                <img class="logo" src="./assets/images/logo.png" alt="Nexus - Portal Oficial de Atlantida">
+            <a href="#inicio">
+                <img class="logo" src="./assets/images/logo.png" alt="Nexus - Portal Oficial de Atläntida">
             </a>
             <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
                 <span class="nav-toggle__bar"></span>
@@ -61,625 +62,1082 @@
 
 
     <main>
-        <section id="inicio" class="page active">
+
+        <!-- =========================================
+             1. INÍCIO
+        ========================================= -->
+        <section id="inicio" class="page page--full active">
+
             <section class="hero">
+                <img class="hero__image" src="./assets/images/hero.png" alt="Vista da cidade subaquática de Atläntida">
 
-        <img class="hero__image" src="./assets/images/heroimagem.png" alt="Vista da cidade subaquática de Atlântida">
+                <div class="hero__content">
+                    <span class="hero__eyebrow">BEM-VINDO A</span>
 
-        <div class="hero__content">
-            <span class="hero__eyebrow">BEM-VINDO A</span>
+                    <h1 class="hero__title">ATLÄNTIDA</h1>
 
-            <h1 class="hero__title">ATLÂNTIDA</h1>
+                    <h2 class="hero__subtitle">
+                        ONDE TECNOLOGIA,<br>
+                        NATUREZA E GENTE SE<br>
+                        CONECTAM
+                    </h2>
 
-            <h2 class="hero__subtitle">
-                ONDE TECNOLOGIA,<br>
-                NATUREZA E GENTE SE<br>
-                CONECTAM
-            </h2>
+                    <p class="hero__description">
+                        O portal dos moradores de Atläntida.
+                        Aqui você conhece seus vizinhos, conversa com
+                        outras cúpulas, pede ou oferece ajuda e acompanha
+                        os avisos da cidade, para que ninguém fique
+                        isolado no fundo do oceano.
+                    </p>
 
-            <p class="hero__description">
-                O portal dos moradores de Atlântida.
-                Aqui você conhece seus vizinhos, conversa com
-                outras cúpulas, pede ou oferece ajuda e acompanha
-                os avisos da cidade, para que ninguém fique
-                isolado no fundo do oceano.
-            </p>
-        </div>
-    </section>
+                    <button class="hero__scroll" type="button" data-scroll-next aria-label="Rolar para a próxima seção">
+                        <span class="hero__scroll-mouse" aria-hidden="true"><span class="hero__scroll-dot"></span></span>
+                        <span class="hero__scroll-text">Role para explorar</span>
+                    </button>
+                </div>
+            </section>
 
-    <!-- CIVILIZAÇÃO -->
-    <section class="civilization">
+            <section class="section">
+                <header class="section-header section-header--display section-header--center">
+                    <p class="section-header__eyebrow">EXPLORE</p>
+                    <h2 class="section-header__title">A Civilização</h2>
+                </header>
 
-        <div class="civilization__heading">
-            <span class="civilization__eyebrow">EXPLORE</span>
-            <h2 class="civilization__title">A Civilização</h2>
-        </div>
+                <div class="grid grid--4 grid--mobile-2 grid--home-links grid--narrow">
+                    <a href="#mundo" class="card card--feature">
+                        <i class="ph-thin ph-globe card__icon" aria-hidden="true"></i>
+                        <h3 class="card__title">O MUNDO</h3>
+                        <p class="card__text">Como a cidade nasceu e como se vive no fundo do mar</p>
+                    </a>
 
-        <div class="civilization__grid">
-            <div class="civilization__card">
-                <i class="ph-thin ph-globe civilization__icon"></i>
-                <h3>O MUNDO</h3>
-                <p>
-                    Como a cidade nasceu e como
-                    se vive no fundo do mar
-                </p>
-            </div>
-            
-            <div class="civilization__card">
-                <i class="ph-thin ph-identification-badge civilization__icon"></i>
-                <h3>HABITANTES</h3>
-                <p>
-                    Conheça as pessoas que vivem
-                    em Atlântida
-                </p>
-            </div>
+                    <a href="#habitantes" class="card card--feature">
+                        <i class="ph-thin ph-identification-badge card__icon" aria-hidden="true"></i>
+                        <h3 class="card__title">HABITANTES</h3>
+                        <p class="card__text">Conheça as pessoas que vivem em Atläntida</p>
+                    </a>
 
-            <div class="civilization__card">
-                <i class="ph-thin ph-push-pin civilization__icon"></i>
-                <h3>MURAL</h3>
-                <p>
-                    Avisos, pedidos e ofertas de
-                    ajuda da comunidade
-                </p>
-            </div>
-            
-            <div class="civilization__card">
-                <i class="ph-thin ph-envelope-simple-open civilization__icon"></i>
-                <h3>FALE COM O<br>PORTAL</h3>
-                <p>
-                    Peça ajuda, cadastre-se ou fale
-                    com a administração
-                </p>
-            </div>
-        </div>
+                    <a href="#mural" class="card card--feature">
+                        <i class="ph-thin ph-push-pin card__icon" aria-hidden="true"></i>
+                        <h3 class="card__title">MURAL</h3>
+                        <p class="card__text">Avisos, pedidos e ofertas de ajuda da comunidade</p>
+                    </a>
 
-    </section>
+                    <a href="#fale" class="card card--feature">
+                        <i class="ph-thin ph-envelope-simple-open card__icon" aria-hidden="true"></i>
+                        <h3 class="card__title">FALE COM O<br>PORTAL</h3>
+                        <p class="card__text">Peça ajuda, cadastre-se ou fale com a administração</p>
+                    </a>
+                </div>
+            </section>
         </section>
 
-        <section id="mundo" class="page">
+
+        <!-- =========================================
+             2. O MUNDO
+        ========================================= -->
+        <section id="mundo" class="page page--full">
             <div class="mundo">
 
-    <header class="mundo__noticias-header mundo__noticias-header--mobile">
-        <div>
-            <span class="mundo__eyebrow">
-                <p>Atlântida · Presente e Memória</p>
-            </span>
-            <h1 class="mundo__titulo">O MUNDO</h1>
-        </div>
-    </header>
-
-    <header class="mundo__noticias-header mundo__noticias-header--tablet">
-        <div>
-            <span class="mundo__eyebrow">
-                <p>Atlântida · Presente e Memória</p>
-            </span>
-            <h1 class="mundo__titulo">O MUNDO</h1>
-        </div>
-    </header>
-
-    <!-- MAPA -->
-    <section class="mundo__mapa">
-
-        <div class="mundo__mapa-visual">
-            <img class="mundo__mapa-imagem" src="./assets/images/mapa.png" alt="Vista completa da cidade subaquática de Atlântida">
-
-    <div class="mundo__marcadores">
-
-        <span id="marcador-saude" class="mundo__marcador mundo__marcador--1">
-            <span class="mundo__marcador-numero">1</span>
-            <span class="mundo__marcador-texto">Saúde</span>
-        </span>
-
-        <span id="marcador-educacao" class="mundo__marcador mundo__marcador--2">
-            <span class="mundo__marcador-numero">2</span>
-            <span class="mundo__marcador-texto">Educação</span>
-        </span>
-
-        <span id="marcador-logistica" class="mundo__marcador mundo__marcador--3">
-            <span class="mundo__marcador-numero">3</span>
-            <span class="mundo__marcador-texto">Logística</span>
-        </span>
-
-        <span id="marcador-pesquisa" class="mundo__marcador mundo__marcador--4">
-            <span class="mundo__marcador-numero">4</span>
-            <span class="mundo__marcador-texto">Pesquisa</span>
-        </span>
-
-        <span id="marcador-navegacao" class="mundo__marcador mundo__marcador--5">
-            <span class="mundo__marcador-numero">5</span>
-            <span class="mundo__marcador-texto">Navegação</span>
-        </span>
-    </div>
-        </div>
-
-        <div class="mundo__instituicoes">
-            <h2 class="mundo__instituicoes-titulo">
-                Instituições da Sociedade
-            </h2>
-
-    <div id="saude" class="mundo__instituicao">
-        <span class="mundo__instituicao-numero">1</span>
-        <i class="ph-thin ph-heartbeat"></i>
-        <span>Centro de Saúde Abissal</span>
-        <p>Saúde</p>
-    </div>
-
-    <div id="educacao" class="mundo__instituicao">
-        <span class="mundo__instituicao-numero">2</span>
-        <i class="ph-thin ph-graduation-cap"></i>
-        <span>Academia Submersa</span>
-        <p>Educação</p>
-    </div>
-
-    <div id="logistica" class="mundo__instituicao">
-        <span class="mundo__instituicao-numero">3</span>
-        <i class="ph-thin ph-package"></i>
-        <span>Central de Distribuição</span>
-        <p>Logística</p>
-    </div>
-
-    <div id="pesquisa" class="mundo__instituicao">
-        <span class="mundo__instituicao-numero">4</span>
-        <i class="ph-thin ph-flask"></i>
-        <span>Centro de Pesquisa</span>
-        <p>Pesquisa</p>
-    </div>
-
-    <div id="navegacao" class="mundo__instituicao">
-        <span class="mundo__instituicao-numero">5</span>
-        <i class="ph-thin ph-navigation-arrow"></i>
-        <span>Artesanato, Mapas e Tráfego</span>
-        <p>Navegação</p>
-    </div>
-
-    <div id="saude" class="mundo__instituicao">
-        <span class="mundo__instituicao-numero">6</span>
-        <i class="ph-thin ph-bank"></i>
-        <span>Ouvidoria & Conselho</span>
-        <p>Conselho</p>
-    </div>
-        </div>
-
-    </section>
-            <!-- NOTICIAS -->
-            <section class="mundo__noticias">
-                <header class="mundo__noticias-header">
-                    <div>
-                        <span class="mundo__eyebrow">
-                            <p>Atlântida · Presente e Memória</p>
-                        </span>
-                        <h1 class="mundo__titulo">O MUNDO</h1>
-                    </div>
-            
+                <header class="section-header section-header--center-tablet mundo__header">
+                    <p class="section-header__eyebrow">Presente e Memória</p>
+                    <h1 class="section-header__title">O MUNDO</h1>
+                    <p class="section-header__intro">Atläntida é feita de lugares, memórias e criaturas que dividem o mesmo oceano. Explore as instituições que organizam a cidade, revisite o arquivo histórico e conheça a fauna que vive nos mares ao redor.</p>
                 </header>
-                <div class="mundo__categorias">
-                <button class="mundo__categoria mundo__categoria--ativa" type="button" data-categoria="arquivo">
-                    <i class="ph-thin ph-archive mundo__icone-circular"></i>
-                    <p>Arquivo Histórico</p>
-                </button>
-                <button class="mundo__categoria" type="button" data-categoria="fauna">
-                    <i class="ph-thin ph-fish mundo__icone-circular"></i>
-                    <p>Fauna</p>
-                </button>
+
+                <!-- Mapa -->
+                <section class="mundo__mapa">
+
+                    <div class="mundo__mapa-visual">
+                        <img class="mundo__mapa-imagem" src="./assets/images/mapa.png" alt="Vista completa da cidade subaquática de Atläntida">
+
+                        <span id="marcador-saude" class="mundo__marcador mundo__marcador--1">
+                            <span class="mundo__marcador-numero">1</span>
+                            <span class="mundo__marcador-texto">Saúde</span>
+                        </span>
+
+                        <span id="marcador-educacao" class="mundo__marcador mundo__marcador--2">
+                            <span class="mundo__marcador-numero">2</span>
+                            <span class="mundo__marcador-texto">Educação</span>
+                        </span>
+
+                        <span id="marcador-logistica" class="mundo__marcador mundo__marcador--3">
+                            <span class="mundo__marcador-numero">3</span>
+                            <span class="mundo__marcador-texto">Logística</span>
+                        </span>
+
+                        <span id="marcador-pesquisa" class="mundo__marcador mundo__marcador--4">
+                            <span class="mundo__marcador-numero">4</span>
+                            <span class="mundo__marcador-texto">Pesquisa</span>
+                        </span>
+
+                        <span id="marcador-navegacao" class="mundo__marcador mundo__marcador--5">
+                            <span class="mundo__marcador-numero">5</span>
+                            <span class="mundo__marcador-texto">Navegação</span>
+                        </span>
+
+                        <span id="marcador-conselho" class="mundo__marcador mundo__marcador--6">
+                            <span class="mundo__marcador-numero">6</span>
+                            <span class="mundo__marcador-texto">Conselho</span>
+                        </span>
+                    </div>
+
+                    <div class="mundo__instituicoes">
+                        <h2 class="mundo__instituicoes-titulo">Instituições da Sociedade</h2>
+
+                        <div id="saude" class="mundo__instituicao">
+                            <span class="mundo__instituicao-numero">1</span>
+                            <i class="ph-thin ph-heartbeat icon-circle icon-circle--sand" aria-hidden="true"></i>
+                            <button class="mundo__instituicao-nome" type="button" aria-expanded="false" aria-controls="saude-detalhe">Centro de Saúde Abissal</button>
+                            <p class="mundo__instituicao-categoria">Saúde</p>
+                            <div class="mundo__instituicao-detalhe" id="saude-detalhe">
+                                <p class="mundo__instituicao-desc">Cuida da saúde dos moradores com medicina adaptada à vida em alta pressão e acompanha a saúde de toda a cidade.</p>
+                                <a class="link-arrow link-arrow--sm" href="#habitantes" data-person-target="kael">Conheça quem faz parte deste lugar <span aria-hidden="true">↗</span></a>
+                            </div>
+                        </div>
+
+                        <div id="educacao" class="mundo__instituicao">
+                            <span class="mundo__instituicao-numero">2</span>
+                            <i class="ph-thin ph-graduation-cap icon-circle icon-circle--sand" aria-hidden="true"></i>
+                            <button class="mundo__instituicao-nome" type="button" aria-expanded="false" aria-controls="educacao-detalhe">Academia Submersa</button>
+                            <p class="mundo__instituicao-categoria">Educação</p>
+                            <div class="mundo__instituicao-detalhe" id="educacao-detalhe">
+                                <p class="mundo__instituicao-desc">Escola e centro de formação da cidade. Ensina história, ciências e as habilidades para viver sob o oceano.</p>
+                                <a class="link-arrow link-arrow--sm" href="#habitantes" data-person-target="bruno">Conheça quem faz parte deste lugar <span aria-hidden="true">↗</span></a>
+                            </div>
+                        </div>
+
+                        <div id="logistica" class="mundo__instituicao">
+                            <span class="mundo__instituicao-numero">3</span>
+                            <i class="ph-thin ph-package icon-circle icon-circle--sand" aria-hidden="true"></i>
+                            <button class="mundo__instituicao-nome" type="button" aria-expanded="false" aria-controls="logistica-detalhe">Central de Distribuição</button>
+                            <p class="mundo__instituicao-categoria">Logística</p>
+                            <div class="mundo__instituicao-detalhe" id="logistica-detalhe">
+                                <p class="mundo__instituicao-desc">Distribui alimentos, peças e suprimentos entre as cúpulas e organiza as entregas da comunidade.</p>
+                                <a class="link-arrow link-arrow--sm" href="#habitantes" data-person-target="darius">Conheça quem faz parte deste lugar <span aria-hidden="true">↗</span></a>
+                            </div>
+                        </div>
+
+                        <div id="pesquisa" class="mundo__instituicao">
+                            <span class="mundo__instituicao-numero">4</span>
+                            <i class="ph-thin ph-flask icon-circle icon-circle--sand" aria-hidden="true"></i>
+                            <button class="mundo__instituicao-nome" type="button" aria-expanded="false" aria-controls="pesquisa-detalhe">Centro de Pesquisa</button>
+                            <p class="mundo__instituicao-categoria">Pesquisa</p>
+                            <div class="mundo__instituicao-detalhe" id="pesquisa-detalhe">
+                                <p class="mundo__instituicao-desc">Estuda a vida marinha, as correntes e as tecnologias que mantêm a cidade em equilíbrio com o oceano.</p>
+                                <a class="link-arrow link-arrow--sm" href="#habitantes" data-person-target="lira">Conheça quem faz parte deste lugar <span aria-hidden="true">↗</span></a>
+                            </div>
+                        </div>
+
+                        <div id="navegacao" class="mundo__instituicao">
+                            <span class="mundo__instituicao-numero">5</span>
+                            <i class="ph-thin ph-navigation-arrow icon-circle icon-circle--sand" aria-hidden="true"></i>
+                            <button class="mundo__instituicao-nome" type="button" aria-expanded="false" aria-controls="navegacao-detalhe">Artesanato, Mapas e Tráfego</button>
+                            <p class="mundo__instituicao-categoria">Navegação</p>
+                            <div class="mundo__instituicao-detalhe" id="navegacao-detalhe">
+                                <p class="mundo__instituicao-desc">Produz mapas e rotas, controla o tráfego de submersíveis entre as cúpulas e abriga os artesãos da cidade.</p>
+                                <a class="link-arrow link-arrow--sm" href="#habitantes" data-person-target="juno">Conheça quem faz parte deste lugar <span aria-hidden="true">↗</span></a>
+                            </div>
+                        </div>
+
+                        <div id="conselho" class="mundo__instituicao">
+                            <span class="mundo__instituicao-numero">6</span>
+                            <i class="ph-thin ph-bank icon-circle icon-circle--sand" aria-hidden="true"></i>
+                            <button class="mundo__instituicao-nome" type="button" aria-expanded="false" aria-controls="conselho-detalhe">Ouvidoria &amp; Conselho</button>
+                            <p class="mundo__instituicao-categoria">Conselho</p>
+                            <div class="mundo__instituicao-detalhe" id="conselho-detalhe">
+                                <p class="mundo__instituicao-desc">Reúne os representantes da cidade. Recebe reclamações e sugestões dos moradores e decide as regras em assembleia.</p>
+                                <a class="link-arrow link-arrow--sm" href="#habitantes" data-person-target="sora">Conheça quem faz parte deste lugar <span aria-hidden="true">↗</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Arquivo histórico e fauna -->
+                <section class="section mundo__noticias">
+
+                    <div class="grid grid--2 grid--gap-sm" data-filter-group="mundo">
+                        <button class="btn btn--cyan btn--lg btn--block is-active" type="button" data-filter="arquivo">
+                            <i class="ph-thin ph-archive icon-circle" aria-hidden="true"></i>
+                            <span>Arquivo Histórico</span>
+                        </button>
+                        <button class="btn btn--cyan btn--lg btn--block" type="button" data-filter="fauna">
+                            <i class="ph-thin ph-fish icon-circle" aria-hidden="true"></i>
+                            <span>Fauna</span>
+                        </button>
+                    </div>
+
+                    <div class="mundo__conteudo" data-filter-target="mundo">
+
+                        <!-- Arquivo histórico: linha do tempo interativa -->
+                        <section class="arquivo" data-category="arquivo" aria-labelledby="arquivo-titulo">
+                            <header class="tab-intro">
+                                <h2 class="tab-intro__title" id="arquivo-titulo">Antes de chamarmos este lugar de lar</h2>
+                                <p class="tab-intro__text">Cinco registros preservados contam como os sinais de uma crise se transformaram em desaparecimento, deslocamento e, por fim, em uma nova comunidade sob o oceano. Selecione um marco para consultar o registro.</p>
+                            </header>
+
+                            <div class="arquivo__linha" role="tablist" aria-label="Marcos da submersão">
+                                <button class="arquivo__marco is-active" type="button" role="tab" id="arquivo-tab-1" aria-controls="arquivo-registro" aria-selected="true" data-arquivo-marco="0">
+                                    <span class="arquivo__numero">01</span><span class="arquivo__ponto" aria-hidden="true"></span><span class="arquivo__etapa">Os alertas</span>
+                                </button>
+                                <button class="arquivo__marco" type="button" role="tab" id="arquivo-tab-2" aria-controls="arquivo-registro" aria-selected="false" data-arquivo-marco="1" tabindex="-1">
+                                    <span class="arquivo__numero">02</span><span class="arquivo__ponto" aria-hidden="true"></span><span class="arquivo__etapa">A elevação</span>
+                                </button>
+                                <button class="arquivo__marco" type="button" role="tab" id="arquivo-tab-3" aria-controls="arquivo-registro" aria-selected="false" data-arquivo-marco="2" tabindex="-1">
+                                    <span class="arquivo__numero">03</span><span class="arquivo__ponto" aria-hidden="true"></span><span class="arquivo__etapa">O aviso</span>
+                                </button>
+                                <button class="arquivo__marco" type="button" role="tab" id="arquivo-tab-4" aria-controls="arquivo-registro" aria-selected="false" data-arquivo-marco="3" tabindex="-1">
+                                    <span class="arquivo__numero">04</span><span class="arquivo__ponto" aria-hidden="true"></span><span class="arquivo__etapa">O desaparecimento</span>
+                                </button>
+                                <button class="arquivo__marco" type="button" role="tab" id="arquivo-tab-5" aria-controls="arquivo-registro" aria-selected="false" data-arquivo-marco="4" tabindex="-1">
+                                    <span class="arquivo__numero">05</span><span class="arquivo__ponto" aria-hidden="true"></span><span class="arquivo__etapa">A reconstrução</span>
+                                </button>
+                            </div>
+
+                            <article class="arquivo__registro" id="arquivo-registro" role="tabpanel" aria-labelledby="arquivo-tab-1" tabindex="0">
+                                <div class="arquivo__registro-topo">
+                                    <span class="arquivo__registro-numero" data-arquivo-numero>REGISTRO 01 / 05</span>
+                                    <span class="arquivo__estado"><span aria-hidden="true"></span> DOCUMENTO PRESERVADO</span>
+                                </div>
+                                <div class="arquivo__registro-corpo">
+                                    <figure class="arquivo__midia">
+                                        <img class="arquivo__imagem" src="./assets/images/cartaz1.png" alt="Jornal recuperado do acervo: Crise climática atinge ponto crítico" data-arquivo-imagem width="500" height="500">
+                                    </figure>
+                                    <div class="arquivo__manchete-wrap">
+                                        <span class="arquivo__fonte" data-arquivo-fonte>BOLETIM CLIMÁTICO · ÚLTIMOS ALERTAS</span>
+                                        <h3 class="arquivo__manchete" data-arquivo-manchete>Crise climática atinge ponto crítico</h3>
+                                        <span class="arquivo__linha-editorial" aria-hidden="true"></span>
+                                        <p class="arquivo__chamada" data-arquivo-chamada>O planeta já não conseguia esconder os sinais. O que antes parecia distante passou a fazer parte do cotidiano.</p>
+                                    </div>
+                                    <div class="arquivo__narrativa">
+                                        <span class="arquivo__rotulo">O que ficou registrado</span>
+                                        <p data-arquivo-narrativa>Temperaturas extremas, eventos climáticos mais intensos e alertas sucessivos marcaram o início de uma crise que governos e comunidades já não podiam tratar como uma ameaça futura.</p>
+                                        <p class="arquivo__consequencia"><i class="ph-thin ph-wave-sine" aria-hidden="true"></i><span><strong>Consequência</strong><span data-arquivo-consequencia>A emergência climática deixa de ser previsão e passa a orientar decisões de sobrevivência.</span></span></p>
+                                    </div>
+                                </div>
+                                <footer class="arquivo__rodape"><span><i class="ph-thin ph-books" aria-hidden="true"></i> Acervo de Atläntida</span><span data-arquivo-periodo>Antes da grande submersão</span></footer>
+                            </article>
+                            <p class="arquivo__nota"><i class="ph-thin ph-info" aria-hidden="true"></i> A ordem dos registros é aproximada. As manchetes foram preservadas; os relatos complementares reúnem a memória coletiva transmitida pelos sobreviventes.</p>
+                        </section>
+
+                        <!-- Fauna -->
+                        <div class="fauna" data-category="fauna" data-fauna hidden>
+                            <header class="tab-intro">
+                                <h2 class="tab-intro__title">Fauna de Atläntida</h2>
+                                <p class="tab-intro__text">Conheça algumas das espécies que habitam os mares de Atläntida e fazem parte do equilíbrio deste ecossistema único.</p>
+                            </header>
+                            <div class="fauna__layout">
+                                <div class="fauna__lista">
+                                    <article class="fauna__item" data-fauna-item>
+                                        <button class="fauna__card" type="button" aria-expanded="false">
+                                            <span class="fauna__thumb">
+                                                <img src="./assets/images/espectroAbissal.png" alt="" loading="lazy">
+                                            </span>
+                                            <span class="fauna__resumo">
+                                                <span class="fauna__nome">Espectro Abissal</span>
+                                                <span class="fauna__tipo">Espécie das fossas</span>
+                                            </span>
+                                            <span class="fauna__toggle" aria-hidden="true">
+                                                <i class="ph-thin ph-plus"></i>
+                                                <i class="ph-thin ph-minus"></i>
+                                            </span>
+                                        </button>
+
+                                        <!-- Detalhes: usados no painel lateral (desktop) e dentro do cartão (tablet/mobile) -->
+                                        <div class="fauna__detalhe">
+                                            <p class="fauna__texto">Uma criatura de corpo alongado, protegido por placas resistentes e adornado com longos tentáculos bioluminescentes. Alimenta-se de organismos microscópicos presentes na água, filtrando grandes quantidades para sobreviver. Apesar de sua dieta, é extremamente territorial e reage agressivamente à aproximação de outras criaturas. Seus pontos luminosos funcionam como sensores, permitindo detectar movimentos mesmo na escuridão absoluta das fossas oceânicas.</p>
+                                            <ul class="fauna__fatos">
+                                                <li class="fauna__fato">
+                                                    <i class="ph-thin ph-waves icon-circle icon-circle--cyan" aria-hidden="true"></i>
+                                                    <span class="fauna__fato-texto">
+                                                        <span class="fauna__fato-titulo">Habitat</span>
+                                                        <span class="fauna__fato-valor">Fossas oceânicas</span>
+                                                    </span>
+                                                </li>
+                                                <li class="fauna__fato">
+                                                    <i class="ph-thin ph-fish icon-circle icon-circle--cyan" aria-hidden="true"></i>
+                                                    <span class="fauna__fato-texto">
+                                                        <span class="fauna__fato-titulo">Alimentação</span>
+                                                        <span class="fauna__fato-valor">Organismos microscópicos</span>
+                                                    </span>
+                                                </li>
+                                                <li class="fauna__fato">
+                                                    <i class="ph-thin ph-star icon-circle icon-circle--cyan" aria-hidden="true"></i>
+                                                    <span class="fauna__fato-texto">
+                                                        <span class="fauna__fato-titulo">Papel no ecossistema</span>
+                                                        <span class="fauna__fato-valor">Filtrador e defensor de território</span>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </article>
+
+                                    <article class="fauna__item" data-fauna-item>
+                                        <button class="fauna__card" type="button" aria-expanded="false">
+                                            <span class="fauna__thumb">
+                                                <img src="./assets/images/baleiaAndromeda.png" alt="" loading="lazy">
+                                            </span>
+                                            <span class="fauna__resumo">
+                                                <span class="fauna__nome">Baleia Andromeda</span>
+                                                <span class="fauna__tipo">Espécie gigante</span>
+                                            </span>
+                                            <span class="fauna__toggle" aria-hidden="true">
+                                                <i class="ph-thin ph-plus"></i>
+                                                <i class="ph-thin ph-minus"></i>
+                                            </span>
+                                        </button>
+
+                                        <!-- Detalhes: usados no painel lateral (desktop) e dentro do cartão (tablet/mobile) -->
+                                        <div class="fauna__detalhe">
+                                            <p class="fauna__texto">Uma gigantesca criatura marinha de corpo robusto, pele escura e padrões bioluminescentes que lembram um céu estrelado. Alimenta-se principalmente de plâncton e outros organismos microscópicos, filtrando a água durante seus deslocamentos. Suas vocalizações de baixa frequência podem percorrer grandes distâncias, permitindo a comunicação entre indivíduos separados por quilômetros. Apesar de seu tamanho impressionante, apresenta comportamento geralmente pacífico.</p>
+                                            <ul class="fauna__fatos">
+                                                <li class="fauna__fato">
+                                                    <i class="ph-thin ph-waves icon-circle icon-circle--cyan" aria-hidden="true"></i>
+                                                    <span class="fauna__fato-texto">
+                                                        <span class="fauna__fato-titulo">Habitat</span>
+                                                        <span class="fauna__fato-valor">Águas abertas</span>
+                                                    </span>
+                                                </li>
+                                                <li class="fauna__fato">
+                                                    <i class="ph-thin ph-fish icon-circle icon-circle--cyan" aria-hidden="true"></i>
+                                                    <span class="fauna__fato-texto">
+                                                        <span class="fauna__fato-titulo">Alimentação</span>
+                                                        <span class="fauna__fato-valor">Plâncton e microrganismos</span>
+                                                    </span>
+                                                </li>
+                                                <li class="fauna__fato">
+                                                    <i class="ph-thin ph-star icon-circle icon-circle--cyan" aria-hidden="true"></i>
+                                                    <span class="fauna__fato-texto">
+                                                        <span class="fauna__fato-titulo">Papel no ecossistema</span>
+                                                        <span class="fauna__fato-valor">Filtra grandes volumes de água</span>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </article>
+
+                                    <article class="fauna__item" data-fauna-item>
+                                        <button class="fauna__card" type="button" aria-expanded="false">
+                                            <span class="fauna__thumb">
+                                                <img src="./assets/images/carangueijoRei.png" alt="" loading="lazy">
+                                            </span>
+                                            <span class="fauna__resumo">
+                                                <span class="fauna__nome">Caranguejo Rei</span>
+                                                <span class="fauna__tipo">Predador do fundo</span>
+                                            </span>
+                                            <span class="fauna__toggle" aria-hidden="true">
+                                                <i class="ph-thin ph-plus"></i>
+                                                <i class="ph-thin ph-minus"></i>
+                                            </span>
+                                        </button>
+
+                                        <!-- Detalhes: usados no painel lateral (desktop) e dentro do cartão (tablet/mobile) -->
+                                        <div class="fauna__detalhe">
+                                            <p class="fauna__texto">Um crustáceo de médio a grande porte, com carapaça espessa, múltiplos olhos e pinças extremamente poderosas. Suas estruturas rígidas protegem o corpo contra predadores, enquanto suas patas articuladas permitem atravessar terrenos rochosos com facilidade. É uma criatura territorial que utiliza sua força para defender seu habitat e capturar presas, sendo um dos principais predadores do fundo oceânico.</p>
+                                            <ul class="fauna__fatos">
+                                                <li class="fauna__fato">
+                                                    <i class="ph-thin ph-waves icon-circle icon-circle--cyan" aria-hidden="true"></i>
+                                                    <span class="fauna__fato-texto">
+                                                        <span class="fauna__fato-titulo">Habitat</span>
+                                                        <span class="fauna__fato-valor">Fundo oceânico rochoso</span>
+                                                    </span>
+                                                </li>
+                                                <li class="fauna__fato">
+                                                    <i class="ph-thin ph-fish icon-circle icon-circle--cyan" aria-hidden="true"></i>
+                                                    <span class="fauna__fato-texto">
+                                                        <span class="fauna__fato-titulo">Alimentação</span>
+                                                        <span class="fauna__fato-valor">Presas capturadas com as pinças</span>
+                                                    </span>
+                                                </li>
+                                                <li class="fauna__fato">
+                                                    <i class="ph-thin ph-star icon-circle icon-circle--cyan" aria-hidden="true"></i>
+                                                    <span class="fauna__fato-texto">
+                                                        <span class="fauna__fato-titulo">Papel no ecossistema</span>
+                                                        <span class="fauna__fato-valor">Predador do fundo oceânico</span>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </article>
+
+                                    <article class="fauna__item" data-fauna-item>
+                                        <button class="fauna__card" type="button" aria-expanded="false">
+                                            <span class="fauna__thumb">
+                                                <img src="./assets/images/tartarugaBolha.png" alt="" loading="lazy">
+                                            </span>
+                                            <span class="fauna__resumo">
+                                                <span class="fauna__nome">Tartaruga Bolha</span>
+                                                <span class="fauna__tipo">Espécie de recife</span>
+                                            </span>
+                                            <span class="fauna__toggle" aria-hidden="true">
+                                                <i class="ph-thin ph-plus"></i>
+                                                <i class="ph-thin ph-minus"></i>
+                                            </span>
+                                        </button>
+
+                                        <!-- Detalhes: usados no painel lateral (desktop) e dentro do cartão (tablet/mobile) -->
+                                        <div class="fauna__detalhe">
+                                            <p class="fauna__texto">Uma espécie de tartaruga marinha de grande porte, reconhecida por seu casco formado por placas arredondadas semelhantes a bolhas. Essas estruturas apresentam padrões luminosos azulados que ajudam na orientação em águas profundas. Seu corpo resistente oferece proteção contra predadores, enquanto suas nadadeiras largas permitem deslocamentos lentos e eficientes. Alimenta-se de algas e pequenos organismos encontrados em recifes e formações rochosas submarinas.</p>
+                                            <ul class="fauna__fatos">
+                                                <li class="fauna__fato">
+                                                    <i class="ph-thin ph-waves icon-circle icon-circle--cyan" aria-hidden="true"></i>
+                                                    <span class="fauna__fato-texto">
+                                                        <span class="fauna__fato-titulo">Habitat</span>
+                                                        <span class="fauna__fato-valor">Recifes e formações rochosas</span>
+                                                    </span>
+                                                </li>
+                                                <li class="fauna__fato">
+                                                    <i class="ph-thin ph-fish icon-circle icon-circle--cyan" aria-hidden="true"></i>
+                                                    <span class="fauna__fato-texto">
+                                                        <span class="fauna__fato-titulo">Alimentação</span>
+                                                        <span class="fauna__fato-valor">Algas e pequenos organismos</span>
+                                                    </span>
+                                                </li>
+                                                <li class="fauna__fato">
+                                                    <i class="ph-thin ph-star icon-circle icon-circle--cyan" aria-hidden="true"></i>
+                                                    <span class="fauna__fato-texto">
+                                                        <span class="fauna__fato-titulo">Papel no ecossistema</span>
+                                                        <span class="fauna__fato-valor">Consumidora de algas dos recifes</span>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </article>
+
+                                    <article class="fauna__item" data-fauna-item>
+                                        <button class="fauna__card" type="button" aria-expanded="false">
+                                            <span class="fauna__thumb">
+                                                <img src="./assets/images/lagartoDoArticoProfundo.png" alt="" loading="lazy">
+                                            </span>
+                                            <span class="fauna__resumo">
+                                                <span class="fauna__nome">Lagarto do Ártico Profundo</span>
+                                                <span class="fauna__tipo">Espécie rara</span>
+                                            </span>
+                                            <span class="fauna__toggle" aria-hidden="true">
+                                                <i class="ph-thin ph-plus"></i>
+                                                <i class="ph-thin ph-minus"></i>
+                                            </span>
+                                        </button>
+
+                                        <!-- Detalhes: usados no painel lateral (desktop) e dentro do cartão (tablet/mobile) -->
+                                        <div class="fauna__detalhe">
+                                            <p class="fauna__texto">Um predador adaptado às águas extremamente frias, com o corpo revestido por estruturas cristalinas semelhantes ao gelo e mandíbulas repletas de dentes afiados. Habita cavernas glaciais e regiões remotas do oceano, onde se camufla entre formações congeladas para surpreender suas presas. É uma espécie extremamente rara e muito difícil de localizar, com pouquíssimos avistamentos registrados. Sua aparência misteriosa e a dificuldade de encontrá-lo fizeram com que se tornasse quase uma lenda dos oceanos, cuja existência ainda é questionada por muitos exploradores.</p>
+                                            <ul class="fauna__fatos">
+                                                <li class="fauna__fato">
+                                                    <i class="ph-thin ph-waves icon-circle icon-circle--cyan" aria-hidden="true"></i>
+                                                    <span class="fauna__fato-texto">
+                                                        <span class="fauna__fato-titulo">Habitat</span>
+                                                        <span class="fauna__fato-valor">Cavernas glaciais</span>
+                                                    </span>
+                                                </li>
+                                                <li class="fauna__fato">
+                                                    <i class="ph-thin ph-fish icon-circle icon-circle--cyan" aria-hidden="true"></i>
+                                                    <span class="fauna__fato-texto">
+                                                        <span class="fauna__fato-titulo">Alimentação</span>
+                                                        <span class="fauna__fato-valor">Presas capturadas por emboscada</span>
+                                                    </span>
+                                                </li>
+                                                <li class="fauna__fato">
+                                                    <i class="ph-thin ph-star icon-circle icon-circle--cyan" aria-hidden="true"></i>
+                                                    <span class="fauna__fato-texto">
+                                                        <span class="fauna__fato-titulo">Papel no ecossistema</span>
+                                                        <span class="fauna__fato-valor">Predador de emboscada</span>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </article>
+
+                                    <article class="fauna__item" data-fauna-item>
+                                        <button class="fauna__card" type="button" aria-expanded="false">
+                                            <span class="fauna__thumb">
+                                                <img src="./assets/images/anciaoDoPantano.png" alt="" loading="lazy">
+                                            </span>
+                                            <span class="fauna__resumo">
+                                                <span class="fauna__nome">Ancião do Pântano</span>
+                                                <span class="fauna__tipo">Espécie misteriosa</span>
+                                            </span>
+                                            <span class="fauna__toggle" aria-hidden="true">
+                                                <i class="ph-thin ph-plus"></i>
+                                                <i class="ph-thin ph-minus"></i>
+                                            </span>
+                                        </button>
+
+                                        <!-- Detalhes: usados no painel lateral (desktop) e dentro do cartão (tablet/mobile) -->
+                                        <div class="fauna__detalhe">
+                                            <p class="fauna__texto">Uma criatura misteriosa de corpo alongado e aparência semelhante à de um antigo organismo marinho coberto por algas e vegetação. Pouco se sabe sobre sua biologia, seus hábitos alimentares ou sua distribuição, pois existem pouquíssimos registros de sua presença. Os raros relatos descrevem uma silhueta gigantesca movendo-se lentamente por águas escuras e pantanosas. Sua origem e comportamento permanecem desconhecidos, tornando-o um completo mistério para os pesquisadores.</p>
+                                            <ul class="fauna__fatos">
+                                                <li class="fauna__fato">
+                                                    <i class="ph-thin ph-waves icon-circle icon-circle--cyan" aria-hidden="true"></i>
+                                                    <span class="fauna__fato-texto">
+                                                        <span class="fauna__fato-titulo">Habitat</span>
+                                                        <span class="fauna__fato-valor">Águas escuras e pantanosas</span>
+                                                    </span>
+                                                </li>
+                                                <li class="fauna__fato">
+                                                    <i class="ph-thin ph-fish icon-circle icon-circle--cyan" aria-hidden="true"></i>
+                                                    <span class="fauna__fato-texto">
+                                                        <span class="fauna__fato-titulo">Alimentação</span>
+                                                        <span class="fauna__fato-valor">Desconhecida</span>
+                                                    </span>
+                                                </li>
+                                                <li class="fauna__fato">
+                                                    <i class="ph-thin ph-star icon-circle icon-circle--cyan" aria-hidden="true"></i>
+                                                    <span class="fauna__fato-texto">
+                                                        <span class="fauna__fato-titulo">Papel no ecossistema</span>
+                                                        <span class="fauna__fato-valor">Desconhecido</span>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <!-- Painel de detalhes (desktop). Preenchido pelo main.js -->
+                                <aside class="fauna__painel" data-fauna-painel aria-label="Detalhes da espécie">
+                                    <p class="fauna__painel-vazio" data-fauna-vazio>
+                                        <i class="ph-thin ph-fish" aria-hidden="true"></i>
+                                        <span>Selecione uma espécie para ver os detalhes.</span>
+                                    </p>
+
+                                    <div class="fauna__painel-conteudo" data-fauna-conteudo aria-live="polite" hidden>
+                                        <button class="fauna__fechar" type="button" aria-label="Fechar detalhes" data-fauna-fechar>
+                                            <i class="ph-thin ph-x" aria-hidden="true"></i>
+                                        </button>
+                                        <div class="fauna__painel-midia">
+                                            <img src="" alt="" data-fauna-imagem>
+                                        </div>
+                                        <div class="fauna__painel-corpo">
+                                            <h3 class="fauna__painel-titulo" data-fauna-nome></h3>
+                                            <p class="fauna__painel-tipo" data-fauna-tipo></p>
+                                            <p class="fauna__painel-texto" data-fauna-texto></p>
+                                            <ul class="fauna__fatos" data-fauna-fatos></ul>
+                                        </div>
+                                    </div>
+                                </aside>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
-
-                <!-- CARTAZES-->
-                <div id="conteudo-arquivo" class="mundo__conteudo">
-            <div class="mundo__cartazes">
-                <img src="./assets/images/cartaz.png" alt="Cinco jornais históricos de Atlântida sobre o clima, as marés, a ciência os sobreviventes e o Novo Horizonte">
-            </div>
-        </div>
-
-    <!-- FAUNA -->
-    <div id="conteudo-fauna" class="mundo__conteudo" hidden>
-        <div class="mundo__fauna">
-            <article class="mundo__criatura">
-                <img src="./assets/images/Espectro Abissal.png" alt="Espectro Abissal">
-                <h3>Espectro Abissal</h3>
-                <p>
-                    Uma criatura de corpo alongado, protegido por placas resistentes e adornado com longos tentáculos bioluminescentes. Alimenta-se de organismos microscópicos presentes na água, filtrando grandes quantidades para sobreviver. Apesar de sua dieta, é extremamente territorial e reage agressivamente à aproximação de outras criaturas. Seus pontos luminosos funcionam como sensores, permitindo detectar movimentos mesmo na escuridão absoluta das fossas oceânicas.
-                </p>
-            </article>
-
-            <article class="mundo__criatura">
-                <img src="./assets/images/Baleia Andromeda.png" alt="Baleia Andromeda">
-                <h3>Baleia Andromeda</h3>
-                <p>
-                    Uma gigantesca criatura marinha de corpo robusto, pele escura e padrões bioluminescentes que lembram um céu estrelado. Alimenta-se principalmente de plâncton e outros organismos microscópicos, filtrando a água durante seus deslocamentos. Suas vocalizações de baixa frequência podem percorrer grandes distâncias, permitindo a comunicação entre indivíduos separados por quilômetros. Apesar de seu tamanho impressionante, apresenta comportamento geralmente pacífico.
-                </p>
-            </article>
-
-            <article class="mundo__criatura">
-                <img src="./assets/images/Carangueijo Rei.png" alt="Caranguejo Rei">
-                <h3>Caranguejo Rei</h3>
-                <p>
-                    Um crustáceo de médio a grande porte, com carapaça espessa, múltiplos olhos e pinças extremamente poderosas. Suas estruturas rígidas protegem o corpo contra predadores, enquanto suas patas articuladas permitem atravessar terrenos rochosos com facilidade. É uma criatura territorial que utiliza sua força para defender seu habitat e capturar presas, sendo um dos principais predadores do fundo oceânico.
-                </p>
-            </article>
-
-            <article class="mundo__criatura">
-                <img src="./assets/images/Tartaruga Bolha.png" alt="Tartaruga Bolha">
-                <h3>Tartaruga Bolha</h3>
-                <p>
-                    Uma espécie de tartaruga marinha de grande porte, reconhecida por seu casco formado por placas arredondadas semelhantes a bolhas. Essas estruturas apresentam padrões luminosos azulados que ajudam na orientação em águas profundas. Seu corpo resistente oferece proteção contra predadores, enquanto suas nadadeiras largas permitem deslocamentos lentos e eficientes. Alimenta-se de algas e pequenos organismos encontrados em recifes e formações rochosas submarinas.
-                </p>
-            </article>
-
-            <article class="mundo__criatura">
-                <img src="./assets/images/Lagarto do Artico Profundo.png" alt="Lagarto do Ártico Profundo">
-                <h3>Lagarto do Ártico Profundo</h3>
-                <p>
-                    Um predador adaptado às águas extremamente frias, com o corpo revestido por estruturas cristalinas semelhantes ao gelo e mandíbulas repletas de dentes afiados. Habita cavernas glaciais e regiões remotas do oceano, onde se camufla entre formações congeladas para surpreender suas presas. É uma espécie extremamente rara e muito difícil de localizar, com pouquíssimos avistamentos registrados. Sua aparência misteriosa e a dificuldade de encontrá-lo fizeram com que se tornasse quase uma lenda dos oceanos, cuja existência ainda é questionada por muitos exploradores.
-                </p>
-            </article>
-
-            <article class="mundo__criatura">
-                <img src="./assets/images/Anciao do Pantano.png" alt="Ancião do Pântano">
-                <h3>Ancião do Pântano</h3>
-                <p>
-                    Uma criatura misteriosa de corpo alongado e aparência semelhante à de um antigo organismo marinho coberto por algas e vegetação. Pouco se sabe sobre sua biologia, seus hábitos alimentares ou sua distribuição, pois existem pouquíssimos registros de sua presença. Os raros relatos descrevem uma silhueta gigantesca movendo-se lentamente por águas escuras e pantanosas. Sua origem e comportamento permanecem desconhecidos, tornando-o um completo mistério para os pesquisadores.
-                </p>
-            </article>
-        </div>
-    </div>
-            </section>
-        </div>
         </section>
 
+
+        <!-- =========================================
+             3. HABITANTES
+        ========================================= -->
         <section id="habitantes" class="page">
-            <p class="page__inhabitants__subtitle">Nossa gente</p>
-            <h1 class="page__inhabitants__title">HABITANTES</h1>
+            <header class="section-header section-header--sand">
+                <p class="section-header__eyebrow">Nossa gente</p>
+                <h1 class="section-header__title">HABITANTES</h1>
+                <p class="section-header__intro">Atläntida não é mantida por instituições abstratas, mas por pessoas. Estes seis moradores são alguns dos rostos que mantêm a cidade em movimento, cada um ligado a um lugar importante da vida coletiva.</p>
+            </header>
 
-            <div class="page__inhabitants__profile">
-                    <article class="profile">
-                        <img class="profile__image" src="./assets/images/Lira.png" alt="Lira Vellen, bióloga marinha">
-                        <h3 class="profile__name">Lira Vellen</h3>
-                        <p class="profile__role">Bióloga marinha</p>
-                        <p class="profile__description">Estuda a vida marinha e ajuda a preservar o equilíbrio do ecossistema de Atlântida.</p>
-                        <p class="profile__tags">PESQUISA | NATUREZA | CIÊNCIA</p>
-                    </article>
-
-                    <article class="profile">
-                        <img class="profile__image" src="./assets/images/Darius.png" alt="Darius Kell, engenheiro">
-                        <h3 class="profile__name">Darius Kell</h3>
-                        <p class="profile__role">Engenheiro</p>
-                        <p class="profile__description">Mantém as estruturas da cidade funcionando e garante que a tecnologia nunca pare.</p>
-                        <p class="profile__tags">TECNOLOGIA | MANUTENÇÃO | SOLUÇÕES</p>
-                    </article>
-
-                    <article class="profile">
-                        <img class="profile__image" src="./assets/images/Sora.png" alt="Sora Tanaka, arquivista">
-                        <h3 class="profile__name">Sora Tanaka</h3>
-                        <p class="profile__role">Arquivista</p>
-                        <p class="profile__description">Guarda a memória de Atlântida e organiza o conhecimento da comunidade.</p>
-                        <p class="profile__tags">HISTÓRIA | CULTURA | APRENDIZADO</p>
-                    </article>
-
-                    <article class="profile">
-                        <img class="profile__image" src="./assets/images/Bruno.png" alt="Bruno Santos, professor">
-                        <h3 class="profile__name">Bruno Santos</h3>
-                        <p class="profile__role">Professor</p>
-                        <p class="profile__description">Transmite o conhecimento e a história de Atlântida, preparando as futuras gerações para os desafios do oceano.</p>
-                        <p class="profile__tags">EDUCAÇÃO | ENSINO | CONHECIMENTO</p>
-                    </article>
-
-                    <article class="profile">
-                        <img class="profile__image" src="./assets/images/Juno.png" alt="Juno Reyes, técnica de comunicação">
-                        <h3 class="profile__name">Juno Reyes</h3>
-                        <p class="profile__role">Técnica de comunicação</p>
-                        <p class="profile__description">Mantém os canais de comunicação ativos e conecta pessoas dentro e fora da cidade.</p>
-                        <p class="profile__tags">COMUNICAÇÃO | REDES | CRIATIVIDADE</p>
-                    </article>
-
-                    <article class="profile">
-                        <img class="profile__image" src="./assets/images/Kael.png" alt="Kael, médico">
-                        <h3 class="profile__name">Kael</h3>
-                        <p class="profile__role">Médico</p>
-                        <p class="profile__description">Cuida da saúde da comunidade e ajuda a todos a viverem melhor em Atlântida.</p>
-                        <p class="profile__tags">SAÚDE | CUIDADO | BEM-ESTAR</p>
-                    </article>
+            <div class="filters filters--compact" role="group" aria-label="Filtrar habitantes por local de atuação" data-filter-group="habitantes">
+                <button class="btn btn--sand is-active" type="button" data-filter="all" aria-pressed="true">Todos</button>
+                <button class="btn btn--sand" type="button" data-filter="saude">Saúde</button>
+                <button class="btn btn--sand" type="button" data-filter="educacao">Educação</button>
+                <button class="btn btn--sand" type="button" data-filter="logistica">Logística</button>
+                <button class="btn btn--sand" type="button" data-filter="pesquisa">Pesquisa</button>
+                <button class="btn btn--sand" type="button" data-filter="navegacao">Navegação</button>
+                <button class="btn btn--sand" type="button" data-filter="conselho">Conselho</button>
             </div>
 
-            <div class="page__inhabitants__end">
-                <h2 class="page__inhabitants__end_title">CADA HABITANTE FAZ</h2>
-                <h2 class="page__inhabitants__end_title">ATLANTIDA ACONTECER</h2>
-                <p class="page__inhabitants__end_text">E você também faz parte desta história</p>
-                <p class="page__inhabitants__end_text">Explore, conheça, interaja como cada pessoa</p>
-                <p class="page__inhabitants__end_text">torna esta cidade possível.</p>
-                <img class="page__inhabitants__end_image" src="./assets/images/img_end.png" alt="Imagem ilustrativa de habitantes de Atlântida">
+            <div class="grid grid--3 grid--gap-lg habitantes__grid" data-filter-target="habitantes">
+                <article id="morador-lira" class="card card--flat card--profile habitante" data-category="pesquisa">
+                    <div class="card__media card__media--landscape"><img src="./assets/images/Lira.png" alt="Lira Vellen, bióloga marinha" loading="lazy"></div>
+                    <div class="card__body">
+                        <span class="badge badge--sand">PESQUISA</span>
+                        <h2 class="card__title">Lira Vellen</h2>
+                        <p class="card__subtitle">Bióloga marinha</p>
+                        <p class="card__text">Lira observa o que quase ninguém percebe: as pequenas mudanças na vida marinha que podem anunciar grandes transformações no oceano.</p>
+                        <p class="habitante__local"><span>Local de atuação</span><strong>Centro de Pesquisa</strong></p>
+                        <a class="link-arrow" href="#mundo" data-map-target="pesquisa">Ver no mapa <span aria-hidden="true">↗</span></a>
+                        <details class="habitante__historia">
+                            <summary>Conheça a história de Lira</summary>
+                            <div class="habitante__historia-conteudo">
+                                <p>Desde jovem, Lira preferia observar os recifes a acompanhar as conversas nos corredores das cúpulas. Aprendeu a reconhecer padrões na luminosidade dos organismos e a relacioná-los com alterações nas correntes.</p>
+                                <p>Hoje, no Centro de Pesquisa, cruza seus registros com os dados dos outros pesquisadores. Para ela, proteger Atläntida não significa dominar o oceano, mas aprender a escutá-lo antes que um sinal discreto se transforme em crise.</p>
+                                <p class="habitante__gancho"><em>O que procura agora:</em> entender por que algumas espécies estão mudando seus trajetos habituais.</p>
+                            </div>
+                        </details>
+                    </div>
+                </article>
+
+                <article id="morador-darius" class="card card--flat card--profile habitante" data-category="logistica">
+                    <div class="card__media card__media--landscape"><img src="./assets/images/Darius.png" alt="Darius Kell, engenheiro" loading="lazy"></div>
+                    <div class="card__body">
+                        <span class="badge badge--sand">LOGÍSTICA</span>
+                        <h2 class="card__title">Darius Kell</h2>
+                        <p class="card__subtitle">Engenheiro de sistemas</p>
+                        <p class="card__text">Darius resolve problemas antes que virem emergências — e sabe que uma peça no lugar certo pode fazer diferença para uma cúpula inteira.</p>
+                        <p class="habitante__local"><span>Local de atuação</span><strong>Central de Distribuição</strong></p>
+                        <a class="link-arrow" href="#mundo" data-map-target="logistica">Ver no mapa <span aria-hidden="true">↗</span></a>
+                        <details class="habitante__historia">
+                            <summary>Conheça a história de Darius</summary>
+                            <div class="habitante__historia-conteudo">
+                                <p>Darius cresceu entre oficinas e depósitos de manutenção, onde aprendeu a improvisar sem desperdiçar recursos. Em uma cidade cercada pelo oceano, ele vê cada ferramenta, filtro e componente como parte de uma rede de dependências.</p>
+                                <p>Na Central de Distribuição, acompanha o caminho dos suprimentos e ajuda a antecipar faltas. Seu jeito direto pode parecer impaciente, mas ele nunca esquece quem depende de uma entrega para terminar o próprio trabalho.</p>
+                                <p class="habitante__gancho"><em>O que procura agora:</em> tornar a circulação de materiais entre cúpulas mais eficiente e menos vulnerável a falhas.</p>
+                            </div>
+                        </details>
+                    </div>
+                </article>
+
+                <article id="morador-sora" class="card card--flat card--profile habitante" data-category="conselho">
+                    <div class="card__media card__media--landscape"><img src="./assets/images/Sora.png" alt="Sora Tanaka, arquivista" loading="lazy"></div>
+                    <div class="card__body">
+                        <span class="badge badge--sand">CONSELHO</span>
+                        <h2 class="card__title">Sora Tanaka</h2>
+                        <p class="card__subtitle">Arquivista e guardiã de registros</p>
+                        <p class="card__text">Sora preserva relatos, atas e memórias para que as decisões de hoje não apaguem as experiências de quem veio antes.</p>
+                        <p class="habitante__local"><span>Local de atuação</span><strong>Ouvidoria &amp; Conselho</strong></p>
+                        <a class="link-arrow" href="#mundo" data-map-target="conselho">Ver no mapa <span aria-hidden="true">↗</span></a>
+                        <details class="habitante__historia">
+                            <summary>Conheça a história de Sora</summary>
+                            <div class="habitante__historia-conteudo">
+                                <p>Sora começou organizando documentos danificados pela umidade e pelo tempo. Logo percebeu que os arquivos oficiais não contavam tudo: as anotações nas margens e os depoimentos dos moradores também guardavam partes importantes da história.</p>
+                                <p>Hoje, ajuda a manter os registros do Conselho acessíveis e compara propostas atuais com decisões antigas. Ela acredita que uma comunidade só pode escolher seu futuro quando consegue lembrar, inclusive, dos próprios erros.</p>
+                                <p class="habitante__gancho"><em>O que procura agora:</em> reunir relatos de moradores cujas contribuições nunca chegaram aos arquivos oficiais.</p>
+                            </div>
+                        </details>
+                    </div>
+                </article>
+
+                <article id="morador-bruno" class="card card--flat card--profile habitante" data-category="educacao">
+                    <div class="card__media card__media--landscape"><img src="./assets/images/Bruno.png" alt="Bruno Santos, professor" loading="lazy"></div>
+                    <div class="card__body">
+                        <span class="badge badge--sand">EDUCAÇÃO</span>
+                        <h2 class="card__title">Bruno Santos</h2>
+                        <p class="card__subtitle">Professor</p>
+                        <p class="card__text">Bruno ensina ciência e história, mas também incentiva seus alunos a questionarem as soluções que parecem definitivas.</p>
+                        <p class="habitante__local"><span>Local de atuação</span><strong>Academia Submersa</strong></p>
+                        <a class="link-arrow" href="#mundo" data-map-target="educacao">Ver no mapa <span aria-hidden="true">↗</span></a>
+                        <details class="habitante__historia">
+                            <summary>Conheça a história de Bruno</summary>
+                            <div class="habitante__historia-conteudo">
+                                <p>Bruno acredita que ensinar em Atläntida é diferente de apenas transmitir respostas. Cada turma reúne jovens que cresceram em cúpulas diferentes, com experiências e conhecimentos muito próprios.</p>
+                                <p>Por isso, suas aulas misturam teoria, histórias de família e problemas práticos da cidade. Ele mantém um mural de perguntas sem resposta para lembrar aos estudantes que curiosidade também é uma forma de cuidar da comunidade.</p>
+                                <p class="habitante__gancho"><em>O que procura agora:</em> criar um projeto em que alunos documentem saberes cotidianos dos moradores mais antigos.</p>
+                            </div>
+                        </details>
+                    </div>
+                </article>
+
+                <article id="morador-juno" class="card card--flat card--profile habitante" data-category="navegacao">
+                    <div class="card__media card__media--landscape"><img src="./assets/images/Juno.png" alt="Juno Reyes, técnica de comunicação" loading="lazy"></div>
+                    <div class="card__body">
+                        <span class="badge badge--sand">NAVEGAÇÃO</span>
+                        <h2 class="card__title">Juno Reyes</h2>
+                        <p class="card__subtitle">Técnica de comunicação</p>
+                        <p class="card__text">Juno mantém os canais ativos e ajuda informações importantes a atravessarem a cidade sem se perderem pelo caminho.</p>
+                        <p class="habitante__local"><span>Local de atuação</span><strong>Artesanato, Mapas e Tráfego</strong></p>
+                        <a class="link-arrow" href="#mundo" data-map-target="navegacao">Ver no mapa <span aria-hidden="true">↗</span></a>
+                        <details class="habitante__historia">
+                            <summary>Conheça a história de Juno</summary>
+                            <div class="habitante__historia-conteudo">
+                                <p>Juno aprendeu cedo que uma mensagem que chega tarde pode ser tão inútil quanto uma mensagem que nunca foi enviada. Começou ajudando vizinhos a restabelecer contato entre cúpulas durante uma falha nos canais locais.</p>
+                                <p>Desde então, trabalha para que avisos, rotas e pedidos de ajuda sejam compreensíveis para todos. Também recolhe expressões e sinais usados por diferentes comunidades, convencida de que comunicar é mais do que transmitir dados: é criar confiança.</p>
+                                <p class="habitante__gancho"><em>O que procura agora:</em> reduzir os pontos cegos de comunicação nas rotas mais afastadas.</p>
+                            </div>
+                        </details>
+                    </div>
+                </article>
+
+                <article id="morador-kael" class="card card--flat card--profile habitante" data-category="saude">
+                    <div class="card__media card__media--landscape"><img src="./assets/images/Kael.png" alt="Kael, médico" loading="lazy"></div>
+                    <div class="card__body">
+                        <span class="badge badge--sand">SAÚDE</span>
+                        <h2 class="card__title">Kael</h2>
+                        <p class="card__subtitle">Médico</p>
+                        <p class="card__text">Kael cuida dos moradores sem separar o bem-estar físico das condições em que cada pessoa vive e trabalha.</p>
+                        <p class="habitante__local"><span>Local de atuação</span><strong>Centro de Saúde Abissal</strong></p>
+                        <a class="link-arrow" href="#mundo" data-map-target="saude">Ver no mapa <span aria-hidden="true">↗</span></a>
+                        <details class="habitante__historia">
+                            <summary>Conheça a história de Kael</summary>
+                            <div class="habitante__historia-conteudo">
+                                <p>Kael aprendeu que, em uma cidade subaquática, cuidar da saúde exige atenção ao ambiente inteiro: pressão, qualidade da água, descanso, alimentação e o isolamento que pode surgir quando alguém passa tempo demais longe dos outros.</p>
+                                <p>No Centro de Saúde Abissal, escuta os pacientes antes de decidir o tratamento. Muitos moradores o procuram não apenas por uma doença, mas porque confiam em sua calma e em sua capacidade de perceber quando algo não vai bem.</p>
+                                <p class="habitante__gancho"><em>O que procura agora:</em> fortalecer uma rede de vizinhos que possa identificar quando alguém precisa de apoio antes de pedir ajuda.</p>
+                            </div>
+                        </details>
+                    </div>
+                </article>
+            </div>
+
+            <section class="card card--callout" aria-labelledby="habitantes-comunidade-titulo">
+                <div class="card__body">
+                    <div class="section-header section-header--sand">
+                        <p class="section-header__eyebrow">A cidade também é feita de você</p>
+                        <h2 id="habitantes-comunidade-titulo" class="section-header__title">E QUEM NÃO ESTÁ NO RETRATO?</h2>
+                        <p class="section-header__intro">Os nomes em destaque são apenas alguns entre milhares. Atläntida continua viva graças a quem conserta uma tubulação, prepara uma refeição, cuida de uma criança, cultiva algas ou simplesmente percebe que o vizinho anda quieto demais.</p>
+                    </div>
+                    <div class="grid grid--3">
+                        <article class="card card--note">
+                            <div class="card__body">
+                                <i class="card__icon ph-thin ph-hands-clapping" aria-hidden="true"></i>
+                                <h3 class="card__title">Quem mantém tudo funcionando</h3>
+                                <p class="card__text">Técnicos, cultivadores, cozinheiros, artesãos e equipes de manutenção fazem a cidade seguir em frente, mesmo longe dos holofotes.</p>
+                            </div>
+                        </article>
+                        <article class="card card--note">
+                            <div class="card__body">
+                                <i class="card__icon ph-thin ph-chat-circle-dots" aria-hidden="true"></i>
+                                <h3 class="card__title">Quem cuida dos vínculos</h3>
+                                <p class="card__text">Vizinhos que compartilham ferramentas, trocam notícias, acolhem recém-chegados e percebem quando alguém precisa de companhia.</p>
+                            </div>
+                        </article>
+                        <article class="card card--note">
+                            <div class="card__body">
+                                <i class="card__icon ph-thin ph-sparkle" aria-hidden="true"></i>
+                                <h3 class="card__title">Quem inventa novos caminhos</h3>
+                                <p class="card__text">Artistas, estudantes, curiosos e voluntários transformam ideias pequenas em soluções que melhoram a vida de todos.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="card__footer">
+                        <p class="card__text"><strong>Esta página não é uma lista de pessoas importantes.</strong> É um ponto de encontro entre moradores.</p>
+                        <a class="btn btn--sand" href="#mural">Conheça o mural da comunidade <span aria-hidden="true">↗</span></a>
+                    </div>
+                </div>
+            </section>
+
+            <div class="closing closing--image full-bleed">
+                <h2 class="closing__title">CADA HABITANTE FAZ<br>ATLÄNTIDA ACONTECER</h2>
+                <p class="closing__text">A história da cidade também é escrita nas pequenas coisas.</p>
+                <p class="closing__text">Encontre alguém, compartilhe uma ideia, ofereça ajuda.</p>
+                <img class="closing__image" src="./assets/images/corais.png" alt="Corais que crescem ao redor das estruturas de Atläntida" loading="lazy">
             </div>
         </section>
 
-<section id="mural" class="page">
-    <div class="mural__header-top">
-        <div>
-            <span class="mural__subtitle">Conexões e suporte</span>
-            <h2 class="mural__title">MURAL</h2>
-        </div>
-    </div>
 
-    <!-- Filtros -->
-    <div class="mural-filters">
-        <button class="filter-btn active" data-filter="all" type="button">
-            <i class="ph-thin ph-squares-four"></i> Todos
-        </button>
-        <button class="filter-btn" data-filter="aviso" type="button">
-            <i class="ph-thin ph-megaphone"></i> Avisos
-        </button>
-        <button class="filter-btn" data-filter="pedido" type="button">
-            <i class="ph-thin ph-hand-heart"></i> Pedidos
-        </button>
-        <button class="filter-btn" data-filter="informacao" type="button">
-            <i class="ph-thin ph-info"></i> Informações
-        </button>
-        <button class="btn-nova-publicacao" type="button">+ Nova publicação</button>
-    </div>
+        <!-- =========================================
+            4. MURAL DA COMUNIDADE
+        ========================================= -->
+        <section id="mural" class="page">
+            <header class="section-header section-header--lilac">
+                <p class="section-header__eyebrow">Conexões e suporte</p>
+                <h1 class="section-header__title">MURAL DA COMUNIDADE</h1>
+                <p class="section-header__intro">Um espaço para compartilhar avisos, trocar informações, pedir ajuda e se conectar com outros habitantes. Afinal, uma cidade também é feita das pequenas coisas que seus moradores têm a dizer.</p>
+            </header>
 
-    <!-- Lista de Publicações -->
-    <div class="mural-posts">
-        <!-- Post 1: Aviso -->
-        <article class="post-card" data-category="aviso">
-            <!-- <div class="post__image-container">
-                <img src="./assets/images/mural-3.png" alt="Ajuste de pressão nas eclusas do Túnel de Conexão Leste">
-            </div> -->
-            <div class="post__content">
-                <div class="post__meta">
-                    <span class="badge badge--aviso">AVISO</span>
-                    <span class="post__time">Há 1 hora</span>
+            <div class="toolbar">
+                <div class="filters" role="group" aria-label="Filtrar publicações por tipo" data-filter-group="mural">
+                    <button class="btn btn--lilac is-active" type="button" data-filter="all">
+                        <i class="ph-thin ph-squares-four" aria-hidden="true"></i> Todos
+                    </button>
+                    <button class="btn btn--lilac" type="button" data-filter="aviso">
+                        <i class="ph-thin ph-megaphone" aria-hidden="true"></i> Avisos
+                    </button>
+                    <button class="btn btn--lilac" type="button" data-filter="pedido">
+                        <i class="ph-thin ph-hand-heart" aria-hidden="true"></i> Pedidos
+                    </button>
+                    <button class="btn btn--lilac" type="button" data-filter="informacao">
+                        <i class="ph-thin ph-info" aria-hidden="true"></i> Informações
+                    </button>
                 </div>
-                <h3 class="post__author">Kaelen Vance</h3>
-                <h4 class="post__post-title">Ajuste de pressão nas eclusas do Túnel de Conexão Leste</h4>
-                <p class="post__text">Informamos a todos os moradores da Cúpula 3 que realizaremos um ajuste técnico de pressão nas eclusas de transição hoje, às 20h. O tráfego de submersíveis de pequeno porte ficará suspenso durante os 40 minutos de procedimento.</p>
-                <div class="post__footer">
-                    <div class="post__stats">
-                        <span><i class="ph-thin ph-heart"></i> 38</span>
-                        <span><i class="ph-thin ph-chat-text"></i> 5</span>
+
+                <button class="btn btn--lilac btn--tinted btn--fill" type="button">+ Nova publicação</button>
+            </div>
+
+            <div class="stack" data-filter-target="mural">
+
+                <article class="card card--post" data-category="aviso">
+                    <div class="card__body">
+                        <div class="card__meta">
+                            <span class="badge badge--danger">AVISO</span>
+                            <span class="card__time">Há 1 hora</span>
+                        </div>
+                        <h3 class="card__title">Kaelen Vance</h3>
+                        <h4 class="card__subtitle">Ajuste de pressão nas eclusas do Túnel de Conexão Leste</h4>
+                        <p class="card__text">Informamos a todos os moradores da Cúpula 3 que realizaremos um ajuste técnico de pressão nas eclusas de transição hoje, às 20h. O tráfego de submersíveis de pequeno porte ficará suspenso durante os 40 minutos de procedimento.</p>
+                        <div class="card__footer">
+                            <div class="card__stats">
+                                <span><i class="ph-thin ph-heart" aria-hidden="true"></i> 38</span>
+                                <span><i class="ph-thin ph-chat-text" aria-hidden="true"></i> 5</span>
+                            </div>
+                            <button class="card__link" type="button">Ver comentários &gt;</button>
+                        </div>
                     </div>
-                    <a href="#" class="post__comments-link">Ver comentários &gt;</a>
-                </div>
-            </div>
-        </article>
+                </article>
 
-        <!-- Post 2: Aviso -->
-        <article class="post-card" data-category="aviso">
-            <!-- <div class="post__image-container">
-                <img src="./assets/images/mural-1.png" alt="Teste preventivo no sistema de filtragem de oxigênio">
-            </div> -->
-            <div class="post__content">
-                <div class="post__meta">
-                    <span class="badge badge--aviso">AVISO</span>
-                    <span class="post__time">Há 2 horas</span>
-                </div>
-                <h3 class="post__author">Darius Kell</h3>
-                <h4 class="post__post-title">Teste preventivo no sistema de filtragem de oxigênio</h4>
-                <p class="post__text">Informamos a todos os residentes que realizaremos uma manutenção preventiva nas bombas de oxigênio do Setor Leste hoje, às 18h. O procedimento durará cerca de 30 minutos e não afetará a pressão das instalações. Permanecem válidos os protocolos de rotina.</p>
-                <div class="post__footer">
-                    <div class="post__stats">
-                        <span><i class="ph-thin ph-heart"></i> 42</span>
-                        <span><i class="ph-thin ph-chat-text"></i> 8</span>
+                <article class="card card--post" data-category="aviso">
+                    <div class="card__body">
+                        <div class="card__meta">
+                            <span class="badge badge--danger">AVISO</span>
+                            <span class="card__time">Há 2 horas</span>
+                        </div>
+                        <h3 class="card__title">Darius Kell</h3>
+                        <h4 class="card__subtitle">Teste preventivo no sistema de filtragem de oxigênio</h4>
+                        <p class="card__text">Informamos a todos os residentes que realizaremos uma manutenção preventiva nas bombas de oxigênio do Setor Leste hoje, às 18h. O procedimento durará cerca de 30 minutos e não afetará a pressão das instalações. Permanecem válidos os protocolos de rotina.</p>
+                        <div class="card__footer">
+                            <div class="card__stats">
+                                <span><i class="ph-thin ph-heart" aria-hidden="true"></i> 42</span>
+                                <span><i class="ph-thin ph-chat-text" aria-hidden="true"></i> 8</span>
+                            </div>
+                            <button class="card__link" type="button">Ver comentários &gt;</button>
+                        </div>
                     </div>
-                    <a href="#" class="post__comments-link">Ver comentários &gt;</a>
-                </div>
-            </div>
-        </article>
+                </article>
 
-        <!-- Post 3: Pedido -->
-        <article class="post-card" data-category="pedido">
-            <!-- <div class="post__image-container">
-                <img src="./assets/images/mural-3.png" alt="Troca comunitária de nutrientes e cultivo de bio-oxigênio">
-            </div> -->
-            <div class="post__content">
-                <div class="post__meta">
-                    <span class="badge badge--pedido">PEDIDO</span>
-                    <span class="post__time">Há 3 horas</span>
-                </div>
-                <h3 class="post__author">Lyra Thalassa</h3>
-                <h4 class="post__post-title">Troca comunitária de nutrientes e cultivo de bio-oxigênio</h4>
-                <p class="post__text">Colhi uma nova safra de Spirulina concentrada na Estufa Agrícola do Setor Sul. Preciso de duas válvulas de vedação para tubulação de 50mm. Quem tiver interesse na troca de mantimentos por peças de reposição, entre em contato!</p>
-                <div class="post__footer">
-                    <div class="post__stats">
-                        <span><i class="ph-thin ph-heart"></i> 24</span>
-                        <span><i class="ph-thin ph-chat-text"></i> 9</span>
+                <article class="card card--post" data-category="pedido">
+                    <div class="card__body">
+                        <div class="card__meta">
+                            <span class="badge badge--warning">PEDIDO</span>
+                            <span class="card__time">Há 3 horas</span>
+                        </div>
+                        <h3 class="card__title">Lyra Thalassa</h3>
+                        <h4 class="card__subtitle">Troca comunitária de nutrientes e cultivo de bio-oxigênio</h4>
+                        <p class="card__text">Colhi uma nova safra de Spirulina concentrada na Estufa Agrícola do Setor Sul. Preciso de duas válvulas de vedação para tubulação de 50mm. Quem tiver interesse na troca de mantimentos por peças de reposição, entre em contato!</p>
+                        <div class="card__footer">
+                            <div class="card__stats">
+                                <span><i class="ph-thin ph-heart" aria-hidden="true"></i> 24</span>
+                                <span><i class="ph-thin ph-chat-text" aria-hidden="true"></i> 9</span>
+                            </div>
+                            <button class="card__link" type="button">Ver comentários &gt;</button>
+                        </div>
                     </div>
-                    <a href="#" class="post__comments-link">Ver comentários &gt;</a>
-                </div>
-            </div>
-        </article>
+                </article>
 
-        <!-- Post 4: Pedido -->
-        <article class="post-card" data-category="pedido">
-            <div class="post__image-container">
-                <img src="./assets/images/Solicitação de voluntários para expedição na Barreira de Corais.png" alt="Solicitação de voluntários para expedição na Barreira de Corais">
-            </div>
-            <div class="post__content">
-                <div class="post__meta">
-                    <span class="badge badge--pedido">PEDIDO</span>
-                    <span class="post__time">Há 4 horas</span>
-                </div>
-                <h3 class="post__author">Lira Vellen</h3>
-                <h4 class="post__post-title">Solicitação de voluntários para expedição na Barreira de Corais</h4>
-                <p class="post__text">Estamos organizando uma coleta de amostras biológicas na borda externa da barreira de corais neste fim de semana. Precisamos de 3 voluntários com certificação de mergulho profundo para auxiliar no transporte dos equipamentos de medição. Quem tiver interesse, entre em contato!</p>
-                <div class="post__footer">
-                    <div class="post__stats">
-                        <span><i class="ph-thin ph-heart"></i> 19</span>
-                        <span><i class="ph-thin ph-chat-text"></i> 12</span>
+                <article class="card card--post" data-category="pedido">
+                    <div class="card__media card__media--banner">
+                        <img src="./assets/images/barreiraDeCorais.png" alt="Solicitação de voluntários para expedição na Barreira de Corais">
                     </div>
-                    <a href="#" class="post__comments-link">Ver comentários &gt;</a>
-                </div>
-            </div>
-        </article>
-
-
-        <!-- Post 5: Informação -->
-        <article class="post-card" data-category="informacao">
-            <!-- <div class="post__image-container">
-                <img src="./assets/images/mural-3.png" alt="Horários das rotas de transporte para a Cúpula Central">
-            </div> -->
-            <div class="post__content">
-                <div class="post__meta">
-                    <span class="badge badge--informacao">INFORMAÇÃO</span>
-                    <span class="post__time">Há 5 horas</span>
-                </div>
-                <h3 class="post__author">Nerin Solis</h3>
-                <h4 class="post__post-title">Horários das rotas de transporte para a Cúpula Central</h4>
-                <p class="post__text">O cronograma de saídas das cápsulas de transporte interdistrital foi atualizado no portal. A partir de amanhã, teremos viagens extras a cada 30 minutos no horário de pico para facilitar o deslocamento dos estudantes da Academia.</p>
-                <div class="post__footer">
-                    <div class="post__stats">
-                        <span><i class="ph-thin ph-heart"></i> 61</span>
-                        <span><i class="ph-thin ph-chat-text"></i> 14</span>
+                    <div class="card__body">
+                        <div class="card__meta">
+                            <span class="badge badge--warning">PEDIDO</span>
+                            <span class="card__time">Há 4 horas</span>
+                        </div>
+                        <h3 class="card__title">Lira Vellen</h3>
+                        <h4 class="card__subtitle">Solicitação de voluntários para expedição na Barreira de Corais</h4>
+                        <p class="card__text">Estamos organizando uma coleta de amostras biológicas na borda externa da barreira de corais neste fim de semana. Precisamos de 3 voluntários com certificação de mergulho profundo para auxiliar no transporte dos equipamentos de medição. Quem tiver interesse, entre em contato!</p>
+                        <div class="card__footer">
+                            <div class="card__stats">
+                                <span><i class="ph-thin ph-heart" aria-hidden="true"></i> 19</span>
+                                <span><i class="ph-thin ph-chat-text" aria-hidden="true"></i> 12</span>
+                            </div>
+                            <button class="card__link" type="button">Ver comentários &gt;</button>
+                        </div>
                     </div>
-                    <a href="#" class="post__comments-link">Ver comentários &gt;</a>
-                </div>
-            </div>
-        </article>
+                </article>
 
-        <!-- Post 6: Aviso -->
-        <article class="post-card" data-category="aviso">
-            <div class="post__content">
-                <div class="post__meta">
-                    <span class="badge badge--aviso">AVISO</span>
-                    <span class="post__time">Há 8 horas</span>
-                </div>
-                <h3 class="post__author">Orion Vane</h3>
-                <h4 class="post__post-title">Estabilização dos níveis de oxigênio na Cúpula 2</h4>
-                <p class="post__text">A manutenção corretiva nos filtros de microalgas foi concluída com sucesso. Os indicadores de qualidade do ar retornaram aos 100% de eficiência. Agradecemos à comunidade pela colaboração durante o período de racionamento preventivo.</p>
-                <div class="post__footer">
-                    <div class="post__stats">
-                        <span><i class="ph-thin ph-heart"></i> 52</span>
-                        <span><i class="ph-thin ph-chat-text"></i> 8</span>
+                <article class="card card--post" data-category="informacao">
+                    <div class="card__body">
+                        <div class="card__meta">
+                            <span class="badge badge--info">INFORMAÇÃO</span>
+                            <span class="card__time">Há 5 horas</span>
+                        </div>
+                        <h3 class="card__title">Nerin Solis</h3>
+                        <h4 class="card__subtitle">Horários das rotas de transporte para a Cúpula Central</h4>
+                        <p class="card__text">O cronograma de saídas das cápsulas de transporte interdistrital foi atualizado no portal. A partir de amanhã, teremos viagens extras a cada 30 minutos no horário de pico para facilitar o deslocamento dos estudantes da Academia.</p>
+                        <div class="card__footer">
+                            <div class="card__stats">
+                                <span><i class="ph-thin ph-heart" aria-hidden="true"></i> 61</span>
+                                <span><i class="ph-thin ph-chat-text" aria-hidden="true"></i> 14</span>
+                            </div>
+                            <button class="card__link" type="button">Ver comentários &gt;</button>
+                        </div>
                     </div>
-                    <a href="#" class="post__comments-link">Ver comentários &gt;</a>
-                </div>
-            </div>
-        </article>
+                </article>
 
-        <!-- Post 7: Pedido -->
-        <article class="post-card" data-category="pedido">
-            <div class="post__image-container">
-                <img src="./assets/images/oficina biolumi.png" alt="Inscrições abertas para a oficina de manutenção de redes bioluminescentes">
-            </div>
-            <div class="post__content">
-                <div class="post__meta">
-                    <span class="badge badge--pedido">PEDIDO</span>
-                    <span class="post__time">Há 12 horas</span>
-                </div>
-                <h3 class="post__author">Talia Korin</h3>
-                <h4 class="post__post-title">Inscrições abertas para a oficina de manutenção de redes bioluminescentes</h4>
-                <p class="post__text">Estamos buscando 4 voluntários interessados em aprender técnicas de reparo nos cabos de fibra óptica e feixes bioluminescentes que conectam os bairros. Não é necessária experiência prévia, apenas cadastro regular no portal.</p>
-                <div class="post__footer">
-                    <div class="post__stats">
-                        <span><i class="ph-thin ph-heart"></i> 31</span>
-                        <span><i class="ph-thin ph-chat-text"></i> 11</span>
+                <article class="card card--post" data-category="aviso">
+                    <div class="card__body">
+                        <div class="card__meta">
+                            <span class="badge badge--danger">AVISO</span>
+                            <span class="card__time">Há 8 horas</span>
+                        </div>
+                        <h3 class="card__title">Orion Vane</h3>
+                        <h4 class="card__subtitle">Estabilização dos níveis de oxigênio na Cúpula 2</h4>
+                        <p class="card__text">A manutenção corretiva nos filtros de microalgas foi concluída com sucesso. Os indicadores de qualidade do ar retornaram aos 100% de eficiência. Agradecemos à comunidade pela colaboração durante o período de racionamento preventivo.</p>
+                        <div class="card__footer">
+                            <div class="card__stats">
+                                <span><i class="ph-thin ph-heart" aria-hidden="true"></i> 52</span>
+                                <span><i class="ph-thin ph-chat-text" aria-hidden="true"></i> 8</span>
+                            </div>
+                            <button class="card__link" type="button">Ver comentários &gt;</button>
+                        </div>
                     </div>
-                    <a href="#" class="post__comments-link">Ver comentários &gt;</a>
-                </div>
-            </div>
-        </article>
+                </article>
 
-        <!-- Post 8: Informação -->
-        <article class="post-card" data-category="informacao">
-            <div class="post__content">
-                <div class="post__meta">
-                    <span class="badge badge--informacao">INFORMAÇÃO</span>
-                    <span class="post__time">Há 1 dia</span>
-                </div>
-                <h3 class="post__author">Maya Zephyr</h3>
-                <h4 class="post__post-title">Convocação para a Assembleia Geral do Conselho de Atlântida</h4>
-                <p class="post__text">Convidamos todos os moradores para a sessão comunitária que ocorrerá no Átrio Central neste sábado. Pauta principal: expansão das estufas agrícolas e planejamento de entregas da Central de Logística para o próximo mês.</p>
-                <div class="post__footer">
-                    <div class="post__stats">
-                        <span><i class="ph-thin ph-heart"></i> 74</span>
-                        <span><i class="ph-thin ph-chat-text"></i> 22</span>
+                <article class="card card--post" data-category="pedido">
+                    <div class="card__media card__media--banner">
+                        <img src="./assets/images/oficinaBiolumi.png" alt="Inscrições abertas para a oficina de manutenção de redes bioluminescentes">
                     </div>
-                    <a href="#" class="post__comments-link">Ver comentários &gt;</a>
-                </div>
-            </div>
-        </article>
-
-        <!-- Post 9: Informação -->
-        <article class="post-card" data-category="informacao">
-            <div class="post__image-container">
-                <img src="./assets/images/Abertura do novo acervo digital na Grande Biblioteca.png" alt="Abertura do novo acervo digital na Grande Biblioteca">
-            </div>
-            <div class="post__content">
-                <div class="post__meta">
-                    <span class="badge badge--informacao">INFORMAÇÃO</span>
-                    <span class="post__time">Há 1 dia</span>
-                </div>
-                <h3 class="post__author">Sora Tanaka</h3>
-                <h4 class="post__post-title">Abertura do novo acervo digital na Grande Biblioteca</h4>
-                <p class="post__text">É com grande alegria que anunciamos a digitalização de mais de 500 documentos históricos sobre os primeiros anos da fundação de Atlântida. O acervo já está acessível a todos os moradores nos terminais de consulta da biblioteca central e no portal.</p>
-                <div class="post__footer">
-                    <div class="post__stats">
-                        <span><i class="ph-thin ph-heart"></i> 56</span>
-                        <span><i class="ph-thin ph-chat-text"></i> 15</span>
+                    <div class="card__body">
+                        <div class="card__meta">
+                            <span class="badge badge--warning">PEDIDO</span>
+                            <span class="card__time">Há 12 horas</span>
+                        </div>
+                        <h3 class="card__title">Talia Korin</h3>
+                        <h4 class="card__subtitle">Inscrições abertas para a oficina de manutenção de redes bioluminescentes</h4>
+                        <p class="card__text">Estamos buscando 4 voluntários interessados em aprender técnicas de reparo nos cabos de fibra óptica e feixes bioluminescentes que conectam os bairros. Não é necessária experiência prévia, apenas cadastro regular no portal.</p>
+                        <div class="card__footer">
+                            <div class="card__stats">
+                                <span><i class="ph-thin ph-heart" aria-hidden="true"></i> 31</span>
+                                <span><i class="ph-thin ph-chat-text" aria-hidden="true"></i> 11</span>
+                            </div>
+                            <button class="card__link" type="button">Ver comentários &gt;</button>
+                        </div>
                     </div>
-                    <a href="#" class="post__comments-link">Ver comentários &gt;</a>
-                </div>
+                </article>
+
+                <article class="card card--post" data-category="informacao">
+                    <div class="card__body">
+                        <div class="card__meta">
+                            <span class="badge badge--info">INFORMAÇÃO</span>
+                            <span class="card__time">Há 1 dia</span>
+                        </div>
+                        <h3 class="card__title">Maya Zephyr</h3>
+                        <h4 class="card__subtitle">Convocação para a Assembleia Geral do Conselho de Atläntida</h4>
+                        <p class="card__text">Convidamos todos os moradores para a sessão comunitária que ocorrerá no Átrio Central neste sábado. Pauta principal: expansão das estufas agrícolas e planejamento de entregas da Central de Logística para o próximo mês.</p>
+                        <div class="card__footer">
+                            <div class="card__stats">
+                                <span><i class="ph-thin ph-heart" aria-hidden="true"></i> 74</span>
+                                <span><i class="ph-thin ph-chat-text" aria-hidden="true"></i> 22</span>
+                            </div>
+                            <button class="card__link" type="button">Ver comentários &gt;</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card card--post" data-category="informacao">
+                    <div class="card__media card__media--banner">
+                        <img src="./assets/images/grandeBiblioteca.png" alt="Abertura do novo acervo digital na Grande Biblioteca">
+                    </div>
+                    <div class="card__body">
+                        <div class="card__meta">
+                            <span class="badge badge--info">INFORMAÇÃO</span>
+                            <span class="card__time">Há 1 dia</span>
+                        </div>
+                        <h3 class="card__title">Sora Tanaka</h3>
+                        <h4 class="card__subtitle">Abertura do novo acervo digital na Grande Biblioteca</h4>
+                        <p class="card__text">É com grande alegria que anunciamos a digitalização de mais de 500 documentos históricos sobre os primeiros anos da fundação de Atläntida. O acervo já está acessível a todos os moradores nos terminais de consulta da biblioteca central e no portal.</p>
+                        <div class="card__footer">
+                            <div class="card__stats">
+                                <span><i class="ph-thin ph-heart" aria-hidden="true"></i> 56</span>
+                                <span><i class="ph-thin ph-chat-text" aria-hidden="true"></i> 15</span>
+                            </div>
+                            <button class="card__link" type="button">Ver comentários &gt;</button>
+                        </div>
+                    </div>
+                </article>
             </div>
-        </article>
+            <nav class="pagination" aria-label="Paginação do mural">
+                <button class="pagination__item" type="button" aria-label="Página anterior" disabled><i class="ph-thin ph-caret-left" aria-hidden="true"></i></button>
+                <button class="pagination__item is-active" type="button" aria-current="page" aria-label="Página 1">1</button>
+                <button class="pagination__item" type="button" aria-label="Página 2">2</button>
+                <button class="pagination__item" type="button" aria-label="Página 3">3</button>
+                <button class="pagination__item" type="button" aria-label="Página 4">4</button>
+                <span class="pagination__gap" aria-hidden="true">…</span>
+                <button class="pagination__item" type="button" aria-label="Página 89">89</button>
+                <button class="pagination__item" type="button" aria-label="Próxima página"><i class="ph-thin ph-caret-right" aria-hidden="true"></i></button>
+            </nav>
 
-    </div>
-</section>
+            <section class="card card--callout" aria-labelledby="mural-portal-titulo">
+                <div class="card__body">
+                    <div class="section-header section-header--sand">
+                        <h2 id="mural-portal-titulo" class="section-header__title">PRECISA FALAR COM O PORTAL?</h2>
+                        <p class="section-header__intro">O Mural é o espaço de encontro dos habitantes. Para solicitações oficiais, cadastros, registros ou assuntos que exigem a atenção dos órgãos responsáveis, entre em contato com o Portal de Atläntida.</p>
+                    </div>
+                    <div class="card__footer">
+                        <p class="card__text">Pedidos oficiais não são atendidos pelas publicações do Mural.</p>
+                        <a class="btn btn--sand" href="#fale">Fale com o Portal <span aria-hidden="true">↗</span></a>
+                    </div>
+                </div>
+            </section>
+        </section>
 
+
+        <!-- =========================================
+            5. FALE COM O PORTAL
+        ========================================= -->
         <section id="fale" class="page">
-            <p class="page__portal__subtitle">Sua mensagem chega mais longe</p>
-            <h1 class="page__portal__title">Fale com o Portal</h1>
-            <div class="page__portal_texts">
-                <p>Suporte, denúncias e cadastro de novos habitantes.</p>
-                <p>Resposta em até 2 ciclos.</p>
-                <p class="p_sand"><span>Denúncias de vazamento têm prioridade.</span></p>
-            </div>
-            <div class="page__portal__form">
-                <img class="page__portal__form_bg" src="./assets/images/bckg-forum.png" alt="Imagem ilustrativa do portal de mensagens">
-                <div class="page__portal__form__container">
-                    <h3 class="page__portal__form-title">Envie sua mensagem</h3>
+            <header class="section-header section-header--sand">
+                <p class="section-header__eyebrow">Sua mensagem chega mais longe</p>
+                <h1 class="section-header__title">Fale com o Portal</h1>
+                <p class="section-header__intro">Suporte, denúncias e cadastro de novos habitantes.</p>
+                <p class="section-header__intro">Resposta em até 2 ciclos.</p>
+                <p class="section-header__intro section-header__intro--accent">Denúncias de vazamento têm prioridade.</p>
+            </header>
 
-                    <div class="form_first_row">
-                        <div class="form_name">
-                            <label for="name" class="form_name_label">Nome</label>
-                            <input type="text" id="name" class="form_name_input" name="name" placeholder="Nome">
+            <div class="band band--portal full-bleed">
+                <img class="band__bg" src="./assets/images/bckg-forum.png" alt="">
+
+                <div class="band__content">
+                    <form class="form" data-form novalidate>
+                        <h2 class="form__title">Envie sua mensagem</h2>
+
+                        <div class="form__row">
+                            <div class="field">
+                                <label class="field__label" for="name">Nome</label>
+                                <input class="field__input" type="text" id="name" name="name" placeholder="Nome" autocomplete="name" required aria-describedby="name-error">
+                                <p class="field__error" id="name-error" hidden></p>
+                            </div>
+
+                            <div class="field">
+                                <label class="field__label" for="dome">Cúpula de Origem</label>
+                                <select class="field__input" id="dome" name="dome" required aria-describedby="dome-error">
+                                    <option value="">Selecione sua cúpula</option>
+                                    <option value="cupula-1">Cúpula 1</option>
+                                    <option value="cupula-2">Cúpula 2</option>
+                                    <option value="cupula-3">Cúpula 3</option>
+                                    <option value="cupula-central">Cúpula Central</option>
+                                </select>
+                                <p class="field__error" id="dome-error" hidden></p>
+                            </div>
                         </div>
-                        <div class="form_dome">
-                            <label for="dome" class="form_dome_label">Cúpula de Origem</label>
-                            <input type="text" id="dome" name="dome" class="form_dome_input" placeholder="Selecione a opção abaixo">
+
+                        <fieldset class="field">
+                            <legend class="field__label">Tipo de Solicitação</legend>
+                            <div class="chip-group">
+                                <input class="chip__input" type="radio" name="tipo" value="ajuda" id="ajuda" checked>
+                                <label class="chip" for="ajuda">Ajuda</label>
+
+                                <input class="chip__input" type="radio" name="tipo" value="denuncia" id="denuncia">
+                                <label class="chip" for="denuncia">Denúncia de Vazamento</label>
+
+                                <input class="chip__input" type="radio" name="tipo" value="cadastro" id="cadastro">
+                                <label class="chip" for="cadastro">Cadastro</label>
+                            </div>
+                        </fieldset>
+
+                        <div class="field">
+                            <label class="field__label" for="subject">Assunto</label>
+                            <input class="field__input" type="text" id="subject" name="subject" placeholder="Assunto da mensagem" required aria-describedby="subject-error">
+                            <p class="field__error" id="subject-error" hidden></p>
                         </div>
-                    </div>
 
-                    <div class="form_btn">
-                        <label class="form_btn_title">Tipo de Solicitação</label>
-                        <div class="form_btn_inputs">
-                            <input type="radio" name="tipo" id="ajuda" checked>
-                            <label for="ajuda">Ajuda</label>
-
-                            <input type="radio" name="tipo" id="denuncia">
-                            <label for="denuncia">Denúncia de Vazamento</label>
-
-                            <input type="radio" name="tipo" id="cadastro">
-                            <label for="cadastro">Cadastro</label>
+                        <div class="field">
+                            <label class="field__label" for="message">Mensagem</label>
+                            <textarea class="field__input" id="message" name="message" placeholder="Escreva sua mensagem" required aria-describedby="message-error"></textarea>
+                            <p class="field__error" id="message-error" hidden></p>
                         </div>
-                    </div>
-                    <div class="form_subject">
-                        <label class="form_subject_label" for="subject">Assunto</label>
-                        <input class="form_subject_input" type="text" id="subject" name="subject" placeholder="Assunto da mensagem">
-                    </div>
-                    <div class="form_message">
-                        <label class="form_message_label" for="message">Mensagem</label>
-                        <textarea class="form_message_input" id="message" name="message" placeholder="Escreva sua mensagem"></textarea>
-                    </div>
-                    <div class="form_submit">
-                        <button type="submit">Enviar</button>
-                    </div>
+
+                        <div class="form__actions">
+                            <button class="btn btn--sand btn--tinted btn--fill" type="submit">Enviar</button>
+                        </div>
+
+                        <p class="form__success" role="status" hidden>Mensagem enviada ao Portal. A administração responde em até 2 ciclos.</p>
+                    </form>
                 </div>
             </div>
 
-            <div class="page__portal__end">
-                <h1 class="page__portal__end_title">CADA VOZ IMPORTA</h1>
-                <p class="page__portal__end_text">O Portal é mais do que uma plataforma.</p>
-                <p class="page__portal__end_text">É o ela que nos mantém unidos!.</p>
+            <div class="closing closing--image full-bleed">
+                <h2 class="closing__title">CADA VOZ IMPORTA</h2>
+                <p class="closing__text">O Portal é mais do que uma plataforma.</p>
+                <p class="closing__text">É ele que nos mantém unidos.</p>
+                <img class="closing__image" src="./assets/images/corais.png" alt="Corais que crescem ao redor das estruturas de Atläntida" loading="lazy">
             </div>
         </section>
+
     </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <span class="footer__brand">Atläntida</span>
+            <span class="footer__center">Portal Comunitário</span>
+            <span class="footer__year">2026</span>
+        </div>
+    </footer>
 
     <script src="assets/scripts/main.js" defer></script>
 
